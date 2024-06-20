@@ -5,5 +5,3 @@ These wikis are **ipynb** files which [**JupyterLab**](https://jupyter.org/try-j
 3. On the file browser(left sidebar), right click to download the file and push it onto this repo somehow.
 
 All wikis will be written in md/markdown format.
-
-
