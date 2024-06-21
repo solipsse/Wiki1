@@ -3,19 +3,44 @@ name: Update NBViewer Links Workflow
 on:
   push:
     branches:
-      - main  # You can specify the branch you want to trigger this workflow on
+      - main  # Trigger this workflow on push events to the main branch
 
 jobs:
   update_links:
-    runs-on: ubuntu-latest  # You can choose the appropriate runner
+    runs-on: ubuntu-latest  # Use the latest Ubuntu environment
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up Git
+      run: |
+        git config --global user.email "your_email@example.com"
+        git config --global user.name "YourUsername"
+
+    - name: Install jq (optional, if needed)
+      run: sudo apt-get install jq
+
     - name: Update NBViewer Links
-      uses: KensingtonOscupant/nbviewer-flush-cache-action@v1.0.4
-      with:
-        file_path: 'file_path' # IMPORTANT! path to the file where you would like to have the links changed, for the readme it would be 'README.md'
-        commit_email: 'your_email@example.com'  # Optional, no need to set this one
-        commit_username: 'YourUsername'         # Optional, no need to set this one
+      run: |
+        set -e  # Exit immediately if a command fails
+
+        # Get the latest commit hash
+        latest_commit="$(git rev-parse main)"
+
+        # Function to update links in a file
+        update_links() {
+            local file="$1"
+            sed -i "s|https://nbviewer.org/github/\([^/]\+\)/\([^/]\+\)/blob/\([^/]\+\)/\([^' ']\+\)|https://nbviewer.org/github/\1/\2/blob/${latest_commit}/\4|g" "$file"
+            echo "Updated links in: $file"
+        }
+
+        # Find all .ipynb files and update links
+        find . -type f -name "*.ipynb" | while IFS= read -r file; do
+            update_links "$file"
+            git add "$file"
+        done
+
+        # Commit and push changes
+        git commit -m "Update NBViewer links to latest commit"
+        git push
