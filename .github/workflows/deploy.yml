@@ -21,17 +21,29 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-      - name: Verify Index.ipynb
+
+      - name: Verify content directory
         run: |
+          echo "Listing files in content directory:"
           ls -la ./content
+          echo "Displaying index.ipynb:"
+          cat ./content/index.ipynb
 
       - name: Generate Table of Contents
-        run: jupyter-book toc from-project ./content
+        run: |
+          echo "Generating Table of Contents:"
+          jupyter-book toc from-project ./content
+          echo "Listing files in content directory after ToC generation:"
+          ls -la ./content
+
+      - name: Verify ToC file
+        run: |
+          echo "Displaying contents of _toc.yml if it exists:"
+          cat ./content/_toc.yml || echo "_toc.yml not found"
 
       - name: Build the Jupyter Book
         run: |
-          ls -la ./content
-          ls -la .
+          echo "Building Jupyter Book:"
           jupyter-book build ./content
 
       - name: Deploy to GitHub Pages
