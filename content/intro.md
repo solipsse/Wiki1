@@ -15,3 +15,6 @@ All wikis will be written in md/markdown format.
 - Latex Cheatsheet https://tilburgsciencehub.com/topics/research-skills/templates-dynamic-content/templates/amsmath-latex-cheatsheet/
 - Geogebra in md documentation example https://jhconning.github.io/Trade340/notebooks/embed_geogebra.html
 - something about Desmos implementation into notebook https://stackoverflow.com/questions/33860207/ipython-jupyter-notebook-how-to-embed-interactive-graph-using-desmos-api
+- https://pages.uoregon.edu/torrence/391/labs/LaTeX-cheat-sheet.pdf
+- https://quickref.me/latex.html
+- https://tug.ctan.org/info/latex-refsheet/LaTeX_RefSheet.pdf
