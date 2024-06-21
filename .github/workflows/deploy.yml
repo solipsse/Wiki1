@@ -30,9 +30,7 @@ jobs:
         run: |
           ls -lR ./content
           jupyter-book build ./content
-
-      - name: Commit and Push
-
+          
       - name: Commit built files
         run: |
           git add -A
