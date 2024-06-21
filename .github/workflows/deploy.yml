@@ -22,29 +22,13 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Verify content directory
-        run: |
-          echo "Listing files in content directory:"
-          ls -la ./content
-          echo "Displaying index.ipynb:"
-          cat ./content/index.ipynb
-
       - name: Generate Table of Contents
         run: |
-          echo "Generating Table of Contents:"
-          jupyter-book toc from-project ./content
-          echo "Listing files in content directory after ToC generation:"
-          ls -la .
-
-      - name: Verify ToC file
-        run: |
-          echo "Displaying contents of _toc.yml if it exists:"
-          cat ./_toc.yml || echo "_toc.yml not found"
+          jupyter-book toc ./content
 
       - name: Build the Jupyter Book
         run: |
-          echo "Building Jupyter Book:"
-          jupyter-book build .
+          jupyter-book build ./content
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
