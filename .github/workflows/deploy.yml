@@ -24,11 +24,11 @@ jobs:
 
       - name: Generate Table of Contents
         run: |
-          ls -lR ./content
           jupyter-book toc from-project ./content
 
       - name: Build the Jupyter Book
         run: |
+          ls -lR ./content
           jupyter-book build ./content
 
       - name: Deploy to GitHub Pages
