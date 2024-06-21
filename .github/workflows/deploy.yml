@@ -34,17 +34,17 @@ jobs:
           echo "Generating Table of Contents:"
           jupyter-book toc from-project ./content
           echo "Listing files in content directory after ToC generation:"
-          ls -la ./content
+          ls -la .
 
       - name: Verify ToC file
         run: |
           echo "Displaying contents of _toc.yml if it exists:"
-          cat ./content/_toc.yml || echo "_toc.yml not found"
+          cat ./_toc.yml || echo "_toc.yml not found"
 
       - name: Build the Jupyter Book
         run: |
           echo "Building Jupyter Book:"
-          jupyter-book build ./content
+          jupyter-book build .
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
