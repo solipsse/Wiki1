@@ -11,3 +11,4 @@ All wikis will be written in md/markdown format.
 - https://docs.manim.community/en/stable/tutorials/quickstart.html
 - https://www.geeksforgeeks.org/data-visualization-with-python/
 - Python Code -> excalidraw SVG
+Trial wiki update
