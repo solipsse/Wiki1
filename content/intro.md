@@ -1,4 +1,9 @@
-Hello there.
+# The project
+
+
+# How it works
+
+# How to collaborate
 
 These wikis are **ipynb** files which [**JupyterLab**](https://jupyter.org/try-jupyter/lab/index.html) or [**Jupyter Notebook**](https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb) can be use to make edit.
 1. Download the ipynb file and open on one of the two website or use [Visual Studio Jupyter Notebook extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
@@ -7,7 +12,15 @@ These wikis are **ipynb** files which [**JupyterLab**](https://jupyter.org/try-j
 
 All wikis will be written in md/markdown format.
 
-# To learn and implement
+# Current struggle
+- Latex
+  - Can't use $$ $$ for displaystyle LaTex where equation are on the center of the page instead of $ $ inline LaTex
+
+# Collaborator, Maintainer and Creator
+- Creator: solipsse
+- 
+
+# Reference for learning and implementation
 - https://graphviz.org/
 - https://docs.manim.community/en/stable/tutorials/quickstart.html
 - https://www.geeksforgeeks.org/data-visualization-with-python/
