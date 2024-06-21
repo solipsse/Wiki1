@@ -2,8 +2,8 @@
 Coming soon...
 # How it works
 Coming soon...
-## Referencing
-At the end of the wiki list all resources use with links or md clickable links. This is vital to keep track of our sources.
+## Using the Wiki
+Coming soon...
 # How to collaborate
 Update coming soon...
 These wikis are **ipynb** files which [**JupyterLab**](https://jupyter.org/try-jupyter/lab/index.html) or [**Jupyter Notebook**](https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb) can be use to make edit.
@@ -12,6 +12,9 @@ These wikis are **ipynb** files which [**JupyterLab**](https://jupyter.org/try-j
 3. On the file browser(left sidebar), right click to download the file and push it onto this repo somehow.
 
 All wikis will be written in md/markdown format.
+
+## Referencing
+At the end of the wiki list all resources use with links or md clickable links. This is vital to keep track of our sources.
 
 # Current struggle
 - Latex
