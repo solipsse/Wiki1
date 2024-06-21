@@ -319,7 +319,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-logic-discrete">1. Mathematical Logic (Discrete)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#propositional-logic">Propositional logic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">Boolean Algebra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#propositional-logic">Propositional logic</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#order-of-operation">Order of Operation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#de-morgan-s-laws">De Morgan’s Laws</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predicate-logic">Predicate logic</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-techniques">Proof techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-theory">Model theory</a></li>
@@ -342,7 +347,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-proof">Introduction to Proof</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidean-geometry-plane-geometry">Euclidean Geometry / Plane Geometry</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-euclidean-geometry">Non-Euclidean Geometry</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms">Can a set of axioms proof every other theorem without using new axioms?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-a-complete-set-of-axioms-that-can-prove-every-theorem">Are there a complete set of axioms that can prove every theorem?</a></li>
 </ul>
 </li>
 </ul>
@@ -361,8 +366,82 @@ document.write(`
 <h1>Logic<a class="headerlink" href="#logic" title="Permalink to this heading">#</a></h1>
 <section id="mathematical-logic-discrete">
 <h2>1. Mathematical Logic (Discrete)<a class="headerlink" href="#mathematical-logic-discrete" title="Permalink to this heading">#</a></h2>
+<section id="boolean-algebra">
+<h3>Boolean Algebra<a class="headerlink" href="#boolean-algebra" title="Permalink to this heading">#</a></h3>
+<p>This is the language of logic. There are only two numbers 0 and 1.</p>
+<ul class="simple">
+<li><p>1 = True</p></li>
+<li><p>0 = False</p></li>
+</ul>
+</section>
 <section id="propositional-logic">
 <h3>Propositional logic<a class="headerlink" href="#propositional-logic" title="Permalink to this heading">#</a></h3>
+<p>A proposition is a statement that has one truth value (True or False).</p>
+<p>Example of a preposition</p>
+<ul class="simple">
+<li><p>“The earth is round.”</p></li>
+<li><p>“<span class="math notranslate nohighlight">\(5+6 = 11\)</span>”</p></li>
+<li><p>“Tokyo is the capital of China”</p></li>
+<li><p>“There is life beyond our solar system”</p></li>
+<li><p>“<span class="math notranslate nohighlight">\(x^2 -25 =0\)</span>” (if we know x, the expression can be evaluate as true or false)</p></li>
+</ul>
+<p><strong>Propositional variable</strong> holds an event that can either be True <span class="math notranslate nohighlight">\(\oplus\)</span> False.</p>
+<p><strong>Truth tables</strong> demonstrates the value of a compound preposition.</p>
+<p><strong>Connectives</strong> are like operations using two prepositional variables.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Symbol</p></th>
+<th class="head text-center"><p>Connective</p></th>
+<th class="head text-center"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\land\)</span></p></td>
+<td class="text-center"><p>Conjunction</p></td>
+<td class="text-center"><p>And</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\lor\)</span></p></td>
+<td class="text-center"><p>Disjunction</p></td>
+<td class="text-center"><p>Or</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\oplus\)</span></p></td>
+<td class="text-center"><p>Exclusive Disjunction</p></td>
+<td class="text-center"><p>Xor</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\neg\)</span></p></td>
+<td class="text-center"><p>Negation</p></td>
+<td class="text-center"><p>Not</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\to\)</span></p></td>
+<td class="text-center"><p>Conditional</p></td>
+<td class="text-center"><p>If…then… OR …implies…</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note: <strong>or</strong> is conventionlly inclusive, if it is exclusive, then we need context saying it is exclusive.</p>
+<section id="order-of-operation">
+<h4>Order of Operation<a class="headerlink" href="#order-of-operation" title="Permalink to this heading">#</a></h4>
+<p><strong>Propositional Expression</strong> can become hard to evaluate when we mied variables and connectives together. <strong>Order of operation</strong> is used to avoid confusion.</p>
+<ol class="arabic simple">
+<li><p>parentheses ()[]</p></li>
+<li><p>not <span class="math notranslate nohighlight">\(\neg\)</span></p></li>
+<li><p>and (left to right) <span class="math notranslate nohighlight">\(\land\)</span></p></li>
+<li><p>or (left to right) <span class="math notranslate nohighlight">\(\lor\)</span></p></li>
+</ol>
+<p>“
+<span class="math notranslate nohighlight">\(\overbrace{p\land\underbrace{\neg q}_{2}\lor \underbrace{\neg \overbrace{(p\land q)}^{1}}_{2}}^{3,4 -&gt;}\)</span>
+“</p>
+</section>
+<section id="de-morgan-s-laws">
+<h4>De Morgan’s Laws<a class="headerlink" href="#de-morgan-s-laws" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(p\)</span> = “It will rain today”</p></li>
+<li><p><span class="math notranslate nohighlight">\(q\)</span> = “It will rain tommorow”</p></li>
+</ul>
+<p>It will rain today <strong>and</strong> tommorow = <span class="math notranslate nohighlight">\(p\land q\)</span>.
+This statement will be false when i.e. Not (It will rain today and tommorow) = It Not (rain today) or Not (rain tommorow).$<span class="math notranslate nohighlight">\(\neg(p\land q) = \neg p \lor \neg q\)</span><span class="math notranslate nohighlight">\(
+It will rain today **or** tommorow = \)</span>p\lor q<span class="math notranslate nohighlight">\(. This statement will be false when i.e. Not (It will rain today or tommorow) = It Not (rain today) and Not (rain tommorow).\)</span><span class="math notranslate nohighlight">\(\neg(p\lor q) = \neg p \land \neg q\)</span>$</p>
+</section>
 </section>
 <section id="predicate-logic">
 <h3>Predicate logic<a class="headerlink" href="#predicate-logic" title="Permalink to this heading">#</a></h3>
@@ -453,9 +532,9 @@ document.write(`
 <h3>Non-Euclidean Geometry<a class="headerlink" href="#non-euclidean-geometry" title="Permalink to this heading">#</a></h3>
 <p>We start by assuming that Euclid’s 5th postulate is false, then work on it. This lead to finding <strong>Hyperbolic Geometry</strong> or <strong>Eliptical Geometry</strong></p>
 </section>
-<section id="can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms">
-<h3>Can a set of axioms proof every other theorem without using new axioms?<a class="headerlink" href="#can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms" title="Permalink to this heading">#</a></h3>
-<p>There was a time where Mathematics is facing a foudnation crisis. David Hilbert proof that a finite set of axioms can’t</p>
+<section id="are-there-a-complete-set-of-axioms-that-can-prove-every-theorem">
+<h3>Are there a complete set of axioms that can prove every theorem?<a class="headerlink" href="#are-there-a-complete-set-of-axioms-that-can-prove-every-theorem" title="Permalink to this heading">#</a></h3>
+<p>There was a time where Mathematic is facing a foudnation crisis. Godel’s incompleteness theorem showed that Hilbert’s program was futile. No mathematical system can be both complete and consistnt.</p>
 </section>
 </section>
 </section>
@@ -506,7 +585,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-logic-discrete">1. Mathematical Logic (Discrete)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#propositional-logic">Propositional logic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">Boolean Algebra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#propositional-logic">Propositional logic</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#order-of-operation">Order of Operation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#de-morgan-s-laws">De Morgan’s Laws</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predicate-logic">Predicate logic</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-techniques">Proof techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-theory">Model theory</a></li>
@@ -529,7 +613,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-proof">Introduction to Proof</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidean-geometry-plane-geometry">Euclidean Geometry / Plane Geometry</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-euclidean-geometry">Non-Euclidean Geometry</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms">Can a set of axioms proof every other theorem without using new axioms?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-a-complete-set-of-axioms-that-can-prove-every-theorem">Are there a complete set of axioms that can prove every theorem?</a></li>
 </ul>
 </li>
 </ul>
