@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Logic &#8212; wiki</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Mathematic/Logic';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">wiki</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Mathematic/Logic.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Logic</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-logic-discrete">1. Mathematical Logic (Discrete)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#propositional-logic">Propositional logic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predicate-logic">Predicate logic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-techniques">Proof techniques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-theory">Model theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-theory">Proof theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computability-theory">Computability theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#godel-s-incompleteness-theorems">Gödel’s incompleteness theorems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-theory-discrete">2. Set Theory (Discrete)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sets-and-subsets">Sets and subsets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-sets">Operations on sets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-and-functions">Relations and functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-numbers">Ordinal numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#axiom-of-choice">Axiom of choice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zermelo-fraenkel-set-theory">Zermelo-Fraenkel set theory</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-foundation">3. Math Foundation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-proof">Introduction to Proof</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidean-geometry-plane-geometry">Euclidean Geometry / Plane Geometry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-euclidean-geometry">Non-Euclidean Geometry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms">Can a set of axioms proof every other theorem without using new axioms?</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><a class="reference internal" href="Math-wiki.html"><span class="doc std std-doc">Main Wiki</span></a></p>
+<section class="tex2jax_ignore mathjax_ignore" id="logic">
+<h1>Logic<a class="headerlink" href="#logic" title="Permalink to this heading">#</a></h1>
+<section id="mathematical-logic-discrete">
+<h2>1. Mathematical Logic (Discrete)<a class="headerlink" href="#mathematical-logic-discrete" title="Permalink to this heading">#</a></h2>
+<section id="propositional-logic">
+<h3>Propositional logic<a class="headerlink" href="#propositional-logic" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="predicate-logic">
+<h3>Predicate logic<a class="headerlink" href="#predicate-logic" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="proof-techniques">
+<h3>Proof techniques<a class="headerlink" href="#proof-techniques" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="model-theory">
+<h3>Model theory<a class="headerlink" href="#model-theory" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="proof-theory">
+<h3>Proof theory<a class="headerlink" href="#proof-theory" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="computability-theory">
+<h3>Computability theory<a class="headerlink" href="#computability-theory" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="godel-s-incompleteness-theorems">
+<h3>Gödel’s incompleteness theorems<a class="headerlink" href="#godel-s-incompleteness-theorems" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<hr class="docutils" />
+<section id="set-theory-discrete">
+<h2>2. Set Theory (Discrete)<a class="headerlink" href="#set-theory-discrete" title="Permalink to this heading">#</a></h2>
+<section id="sets-and-subsets">
+<h3>Sets and subsets<a class="headerlink" href="#sets-and-subsets" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="operations-on-sets">
+<h3>Operations on sets<a class="headerlink" href="#operations-on-sets" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="relations-and-functions">
+<h3>Relations and functions<a class="headerlink" href="#relations-and-functions" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="cardinality">
+<h3>Cardinality<a class="headerlink" href="#cardinality" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="ordinal-numbers">
+<h3>Ordinal numbers<a class="headerlink" href="#ordinal-numbers" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="axiom-of-choice">
+<h3>Axiom of choice<a class="headerlink" href="#axiom-of-choice" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="zermelo-fraenkel-set-theory">
+<h3>Zermelo-Fraenkel set theory<a class="headerlink" href="#zermelo-fraenkel-set-theory" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<hr class="docutils" />
+<section id="math-foundation">
+<h2>3. Math Foundation<a class="headerlink" href="#math-foundation" title="Permalink to this heading">#</a></h2>
+<section id="introduction-to-proof">
+<h3>Introduction to Proof<a class="headerlink" href="#introduction-to-proof" title="Permalink to this heading">#</a></h3>
+<p><img alt="" src="../_images/intro-proof.svg" /></p>
+<p>These are not set in stone. One usually starts with a <strong>definition</strong>. Then they make an unproven claim or <strong>conjecture</strong>. <strong>Axioms</strong> are meant to be minimal assumptions before building up. <strong>Lemmas</strong> are milestones as we work towards proving a theorem. Proof of a <strong>theorem</strong> is the primary goal. <strong>Corollaries</strong> are short proofs that rely heavily on the theorem.</p>
+<p>A <strong>definition</strong> is an accurate description of a concept, which require no proof, and should be reversible.</p>
+<ul class="simple">
+<li><p>“if a is define as b (a=b), then, if b, it must be a.”</p></li>
+<li><p>“A <em>sphere</em> is the collection of all points some set distance from a fixed centre.”</p></li>
+</ul>
+<p>An <strong>axiom</strong> is a statement that we accept without prove. Everything we prove must then be built off our axioms. The fewer the axioms the better(i.e. less assumption).</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(0\cdot a = 0\)</span></p></li>
+</ul>
+<p>We use axioms to prove <strong>theorem</strong>. We can use our result to prove more Theorems. By doing this we accumulate the tools we have.</p>
+<ul class="simple">
+<li><p>The Pythagorean Theorem</p></li>
+</ul>
+<p>A <strong>lemma</strong> is a mini-theorem (small result) we might need to prove our main result.</p>
+<p>Results that comes easily from a theorem are called <strong>corollaries</strong></p>
+<p>A <strong>trivial</strong> solution is an <em>obvious</em> solution</p>
+<ul class="simple">
+<li><p>Find all [integer](diophantine equation) a, b, c such that <span class="math notranslate nohighlight">\(a^n + b^n = c^n\)</span> Then a, b, c = 0 is a trivial solution.</p></li>
+</ul>
+</section>
+<section id="euclidean-geometry-plane-geometry">
+<h3>Euclidean Geometry / Plane Geometry<a class="headerlink" href="#euclidean-geometry-plane-geometry" title="Permalink to this heading">#</a></h3>
+<p>Euclid only use 5 axioms to derive everything in geometry.</p>
+<ol class="arabic simple">
+<li><p>A line segment may be drawn between any two points.</p></li>
+<li><p>A straight line may be extended infitely.</p></li>
+<li><p>A circle may be drawn with any center and any radius.</p></li>
+<li><p>All right angles have equal measure.</p></li>
+<li><p>Given a line that interseects two other lines, if the angle made by those two lines with the first line add up to less than <span class="math notranslate nohighlight">\(180\degree\)</span> on thee same side, then those two lines must eventually meet on that side of the first line. This is also known as The <strong>Parallel Postulate</strong>.</p></li>
+</ol>
+<p><img alt="" src="../_images/euclid-postulates.gif" /></p>
+<p>The 5th axioms creates problems for many mathematician. Many have tried to use the first four axioms to prove the 5th but nobody could. It turns out that this postulate is only true for a geometry on a plane.</p>
+<p>A similiar axiom to the parallel Postulate is the <strong>Playfair’s Axiom</strong>. “Given a line and a point not on that line, exactly one line can be drawn through that point that will be parallel to the first line.”</p>
+</section>
+<section id="non-euclidean-geometry">
+<h3>Non-Euclidean Geometry<a class="headerlink" href="#non-euclidean-geometry" title="Permalink to this heading">#</a></h3>
+<p>We start by assuming that Euclid’s 5th postulate is false, then work on it. This lead to finding <strong>Hyperbolic Geometry</strong> or <strong>Eliptical Geometry</strong></p>
+</section>
+<section id="can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms">
+<h3>Can a set of axioms proof every other theorem without using new axioms?<a class="headerlink" href="#can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms" title="Permalink to this heading">#</a></h3>
+<p>There was a time where Mathematics is facing a foudnation crisis. David Hilbert proof that a finite set of axioms can’t</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python",
+            path: "./Mathematic"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-logic-discrete">1. Mathematical Logic (Discrete)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#propositional-logic">Propositional logic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predicate-logic">Predicate logic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-techniques">Proof techniques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-theory">Model theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-theory">Proof theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computability-theory">Computability theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#godel-s-incompleteness-theorems">Gödel’s incompleteness theorems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-theory-discrete">2. Set Theory (Discrete)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sets-and-subsets">Sets and subsets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-sets">Operations on sets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-and-functions">Relations and functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-numbers">Ordinal numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#axiom-of-choice">Axiom of choice</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zermelo-fraenkel-set-theory">Zermelo-Fraenkel set theory</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-foundation">3. Math Foundation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-proof">Introduction to Proof</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidean-geometry-plane-geometry">Euclidean Geometry / Plane Geometry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-euclidean-geometry">Non-Euclidean Geometry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-a-set-of-axioms-proof-every-other-theorem-without-using-new-axioms">Can a set of axioms proof every other theorem without using new axioms?</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
