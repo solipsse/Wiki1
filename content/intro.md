@@ -12,4 +12,6 @@ All wikis will be written in md/markdown format.
 - https://docs.manim.community/en/stable/tutorials/quickstart.html
 - https://www.geeksforgeeks.org/data-visualization-with-python/
 - Python Code -> excalidraw SVG
-Trial wiki update
+- Latex Cheatsheet https://tilburgsciencehub.com/topics/research-skills/templates-dynamic-content/templates/amsmath-latex-cheatsheet/
+- Geogebra in md documentation example https://jhconning.github.io/Trade340/notebooks/embed_geogebra.html
+- something about Desmos implementation into notebook https://stackoverflow.com/questions/33860207/ipython-jupyter-notebook-how-to-embed-interactive-graph-using-desmos-api
