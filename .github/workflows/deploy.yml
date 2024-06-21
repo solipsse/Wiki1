@@ -21,13 +21,17 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+      - name: Verify Index.ipynb
+        run: |
+          ls -la ./content
+
       - name: Generate Table of Contents
         run: jupyter-book toc from-project ./content
 
       - name: Build the Jupyter Book
         run: |
-ls ./content
-ls .
+          ls -la ./content
+          ls -la .
           jupyter-book build ./content
 
       - name: Deploy to GitHub Pages
