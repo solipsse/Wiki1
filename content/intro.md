@@ -1,10 +1,9 @@
 # The project
-
-
+Coming soon...
 # How it works
-
+Coming soon...
 # How to collaborate
-
+Update coming soon...
 These wikis are **ipynb** files which [**JupyterLab**](https://jupyter.org/try-jupyter/lab/index.html) or [**Jupyter Notebook**](https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb) can be use to make edit.
 1. Download the ipynb file and open on one of the two website or use [Visual Studio Jupyter Notebook extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 2. Make edit (each cell can be raw text, md, or code[depending on the kernel you can use python, sql, or C++]).
@@ -14,11 +13,11 @@ All wikis will be written in md/markdown format.
 
 # Current struggle
 - Latex
-  - Can't use $$ $$ for displaystyle LaTex where equation are on the center of the page instead of $ $ inline LaTex
+  - Can't use \$\$ \$\$ for displaystyle LaTex where equation are on the center of the page instead of \$ \$ inline LaTex
 
 # Collaborator, Maintainer and Creator
 - Creator: solipsse
-- 
+- $\vdots$
 
 # Reference for learning and implementation
 - https://graphviz.org/
@@ -31,3 +30,4 @@ All wikis will be written in md/markdown format.
 - https://pages.uoregon.edu/torrence/391/labs/LaTeX-cheat-sheet.pdf
 - https://quickref.me/latex.html
 - https://tug.ctan.org/info/latex-refsheet/LaTeX_RefSheet.pdf
+- $\vdots$
