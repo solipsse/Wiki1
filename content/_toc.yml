@@ -2,7 +2,7 @@ format: jb-book
 root: intro
 chapters:
 - file: index
-- file: ./Mathematic/Math-wiki.ipynb
-- file: /AS-A2-CS/CS=wiki.ipynb
-- file: Computing/CS=wiki.ipynb
+- file: Mathematic/Math-wiki
+- file: AS-A2-CS/CS-wiki
+- file: Computing/CS-wiki
 - file: Physic/Physic-wiki
