@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>To learn and implement &#8212; Naldo&#39;s Wiki/Textbooks</title>
+    <title>The project &#8212; Naldo&#39;s Wiki/Textbooks</title>
   
   
   
@@ -62,10 +62,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Welcome To The Wiki" href="index.html" />
+    <link rel="next" title="Home" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,14 +159,12 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    To learn and implement
+                    The project
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index.html">Welcome To The Wiki</a></li>
-
-
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Mathematic/Math-wiki.html">Naldo’s Mathematic Wiki</a></li>
 <li class="toctree-l1"><a class="reference internal" href="AS-A2-CS/CS-wiki.html">Naldo’s AS-A2 CS Wiki</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Computing/CS-wiki.html">Naldo’s CS Wiki</a></li>
@@ -294,7 +294,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -305,11 +307,25 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>To learn and implement</h1>
+    <h1>The project</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The project</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-collaborate">How to collaborate</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#current-struggle">Current struggle</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborator-maintainer-and-creator">Collaborator, Maintainer and Creator</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-for-learning-and-implementation">Reference for learning and implementation</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -319,7 +335,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p>Hello there.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="the-project">
+<h1>The project<a class="headerlink" href="#the-project" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="how-it-works">
+<h1>How it works<a class="headerlink" href="#how-it-works" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="how-to-collaborate">
+<h1>How to collaborate<a class="headerlink" href="#how-to-collaborate" title="Permalink to this heading">#</a></h1>
 <p>These wikis are <strong>ipynb</strong> files which <a class="reference external" href="https://jupyter.org/try-jupyter/lab/index.html"><strong>JupyterLab</strong></a> or <a class="reference external" href="https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb"><strong>Jupyter Notebook</strong></a> can be use to make edit.</p>
 <ol class="arabic simple">
 <li><p>Download the ipynb file and open on one of the two website or use <a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">Visual Studio Jupyter Notebook extension</a>.</p></li>
@@ -327,8 +350,26 @@ document.write(`
 <li><p>On the file browser(left sidebar), right click to download the file and push it onto this repo somehow.</p></li>
 </ol>
 <p>All wikis will be written in md/markdown format.</p>
-<section class="tex2jax_ignore mathjax_ignore" id="to-learn-and-implement">
-<h1>To learn and implement<a class="headerlink" href="#to-learn-and-implement" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="current-struggle">
+<h1>Current struggle<a class="headerlink" href="#current-struggle" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Latex</p>
+<ul>
+<li><p>Can’t use $<span class="math notranslate nohighlight">\( \)</span><span class="math notranslate nohighlight">\( for displaystyle LaTex where equation are on the center of the page instead of \)</span> $ inline LaTex</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="collaborator-maintainer-and-creator">
+<h1>Collaborator, Maintainer and Creator<a class="headerlink" href="#collaborator-maintainer-and-creator" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Creator: solipsse</p></li>
+<li></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="reference-for-learning-and-implementation">
+<h1>Reference for learning and implementation<a class="headerlink" href="#reference-for-learning-and-implementation" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://graphviz.org/">https://graphviz.org/</a></p></li>
 <li><p><a class="reference external" href="https://docs.manim.community/en/stable/tutorials/quickstart.html">https://docs.manim.community/en/stable/tutorials/quickstart.html</a></p></li>
@@ -380,7 +421,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Welcome To The Wiki</p>
+        <p class="prev-next-title">Home</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -390,6 +431,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The project</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-collaborate">How to collaborate</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#current-struggle">Current struggle</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborator-maintainer-and-creator">Collaborator, Maintainer and Creator</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-for-learning-and-implementation">Reference for learning and implementation</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
