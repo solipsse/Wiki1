@@ -24,6 +24,7 @@ jobs:
 
       - name: Build the Jupyter Book
         run: |
+          jupyter-book toc from-project .
           jupyter-book build .
 
       - name: Deploy to GitHub Pages
