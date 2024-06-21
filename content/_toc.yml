@@ -1,1 +1,2 @@
-root : index.ipynb
+format: jb-book
+root: index.ipynb
