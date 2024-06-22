@@ -18,6 +18,7 @@ Markdown:
 - Bullet and Number list
 - image
 - link. redirect to relevant, a must see.
+- Horizontal line separator
 Code:
 - Any python library for data visualisation
 - Python code to show ideas
