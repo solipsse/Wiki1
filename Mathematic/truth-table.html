@@ -323,7 +323,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or">Or</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xor">Xor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not">Not</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implies">…implies…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional">Conditional</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biconditional">Biconditional</a></li>
 </ul>
             </nav>
         </div>
@@ -337,21 +338,207 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="truth-table-reference">
 <h1>Truth Table Reference<a class="headerlink" href="#truth-table-reference" title="Permalink to this heading">#</a></h1>
+<p>Have a look at <a class="reference internal" href="Logic.html"><span class="doc std std-doc">Logic</span></a></p>
 <section id="and">
 <h2>And<a class="headerlink" href="#and" title="Permalink to this heading">#</a></h2>
-<p>| <span class="math notranslate nohighlight">\(p\)</span> | <span class="math notranslate nohighlight">\(q\)</span> | <span class="math notranslate nohighlight">\(p\land q\)</span> |</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\land q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="or">
 <h2>Or<a class="headerlink" href="#or" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\lor q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="xor">
 <h2>Xor<a class="headerlink" href="#xor" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\oplus q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="not">
 <h2>Not<a class="headerlink" href="#not" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="implies">
-<h2>…implies…<a class="headerlink" href="#implies" title="Permalink to this heading">#</a></h2>
+<section id="conditional">
+<h2>Conditional<a class="headerlink" href="#conditional" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\to q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p>!!!</p>
+<p><span class="math notranslate nohighlight">\(p\)</span> = “you win”<br />
+<span class="math notranslate nohighlight">\(q\)</span> = “I give you money”<br />
+<span class="math notranslate nohighlight">\(p\to q\)</span> = “if you win then I give you money.”<br />
+What would make this statement false? i.e. <span class="math notranslate nohighlight">\(\neg (p \to q)\)</span>?<br />
+Well, it is false only when, “if you win <em>and then</em> I <strong>don’t</strong> give you money”<br />
+<span class="math notranslate nohighlight">\(\therefore\)</span> “If you lose and I give you money”, the statement is still ok! I didn’t break any promise!</p>
+<p>!!!</p>
+<p>a conditional is equivalent to its contrapositive.<br />
+<span class="math notranslate nohighlight">\(\neg q \to \neg p\)</span> = “If I didn’t give you money then you must not have won”<br />
+now look back to truth table of <span class="math notranslate nohighlight">\(p \to q\)</span> and notice that if p then not q is false. Block that line and read the table, which states that the if you didn’t money then you must not have won base from the condition. So (<span class="math notranslate nohighlight">\(\neg q \to \neg p\)</span>) is a true statement.</p>
+<p>Can you do the same to prove why a conditional is not equal to its inverse or converse? i.e. prove the statement would be false.</p>
+</section>
+<section id="biconditional">
+<h2>Biconditional<a class="headerlink" href="#biconditional" title="Permalink to this heading">#</a></h2>
+<p>iff</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\leftrightarrow q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>$$</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>\begin{align*}</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>p\leftrightarrow q &amp;= (p \to q ) \land (q \to p) \</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>&amp;= (p \to q) \land (\neg p \to \neg q ) \text{, constrapositive is true}</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>\end {align*}</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>$$</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>See if you can use intuition to think why the truth table is true.</p>
 </section>
 </section>
 
@@ -404,7 +591,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or">Or</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xor">Xor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not">Not</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implies">…implies…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional">Conditional</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biconditional">Biconditional</a></li>
 </ul>
   </nav></div>
 
