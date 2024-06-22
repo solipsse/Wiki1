@@ -56,7 +56,7 @@ I am not an expert at commiting and keeping all version of the document so if yo
 This is a wish list and a list of problems I encounter in hope that I will see and remember and somehow find solution.
 - Latex
   - Can't use \[ ]\ or \$\$ \$\$ for displaystyle LaTex where equation are on the center of the page instead of \$ \$ inline LaTex
-- Creating diagram through excalidraw: I am thinking of craeting a python library that can create excalidraw diagram through function. The current solution to use excalidraw extension on VS Code or the website to create diagram.
+- Creating diagram through excalidraw: I am thinking of creating a python library that can create excalidraw diagram through function. The current solution to use excalidraw extension on VS Code or the website to create diagram.
 - Theming the Jupyter Book website with css. [Target Colorscheme](https://rosepinetheme.com/palette/) [Target Font](https://www.jetbrains.com/lp/mono/) (considering it needs to have math symbols and font ligature)
 - We might implement a way for people to change the fonts.
 # Collaborator, Maintainer and Creator
