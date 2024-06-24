@@ -3,7 +3,7 @@ root: indexw
 chapters:
 - file: 1/index
   title: Naldo's Wiki
-  sectons:
+  sections:
   - file: 1/math/math-wiki
     title: Math
   - file: 1/physic/physic-wiki
