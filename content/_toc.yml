@@ -1,9 +1,10 @@
 format: jb-book
 root: indexw
-chapters:
-- file: 1/index
-  sections:
-  - file: 1/math/math
-  - file: 1/physic/physic
-  - file: 1/as-a2-cs/cs
-  - file: 1/cs/cs
+- caption:  Wiki/Book by Person
+  chapters:
+  - file: 1/index
+    sections:
+    - file: 1/math/math
+    - file: 1/physic/physic
+    - file: 1/as-a2-cs/cs
+    - file: 1/cs/cs
