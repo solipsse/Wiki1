@@ -19,7 +19,10 @@ There are two branches: main and gh-pages. Any commit-push will run a github act
 
 ### Folder and file structure
 
-In the `./content`, you can see folder with [a number](folder-number.md), These numbers represent the owner of the resource. Inside the folder, there are specific folder subject and inside has the main file, `subject-name.ipynb`. This file outline all the topic and link to file within the same folder. Inside the number folder is `data` which stores all of the extra file we will use in our ipynb. We can `hold shift` and drag the files into the ipynb/md to get the format of embedding files if we don't want to type.
+In the `./content`, you can see folder with [a number](folder-number.md), These numbers represent the owner of the resource. Inside the folder, there are specific folder subject and inside has the main file, `subject-name.md`. This file outline all the topic and link to file within the same folder. Inside the number folder is `data` which stores all of the extra file we will use in our ipynb. We can `hold shift` and drag the files into the ipynb/md to get the format of embedding files if we don't want to type.
+
+> **Tips**  
+> In any .md files, `ctrl + shift + p` and search for "markdown preview" for live preview. `Hold Ctrl + click` on links to use the links on md without preview mode.
 
 The file `_toc.yml` is table of content of the html page, it is the list of page on the left of the page. See [Jupyter Book](https://jupyterbook.org/en/stable/intro.html) for more information.
 

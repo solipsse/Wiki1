@@ -166,6 +166,8 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="1/index.html">Naldo’s Wiki</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="1/math/math.html">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1/physic/physic.html">Physic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1/as-a2-cs/cs.html">AS-A2 CS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1/cs/cs.html">CS</a></li>
 </ul>
@@ -378,7 +380,11 @@ document.write(`
 </section>
 <section id="folder-and-file-structure">
 <h3>Folder and file structure<a class="headerlink" href="#folder-and-file-structure" title="Permalink to this heading">#</a></h3>
-<p>In the <code class="docutils literal notranslate"><span class="pre">./content</span></code>, you can see folder with <a class="reference internal" href="folder-number.html"><span class="doc std std-doc">a number</span></a>, These numbers represent the owner of the resource. Inside the folder, there are specific folder subject and inside has the main file, <code class="docutils literal notranslate"><span class="pre">subject-name.ipynb</span></code>. This file outline all the topic and link to file within the same folder. Inside the number folder is <code class="docutils literal notranslate"><span class="pre">data</span></code> which stores all of the extra file we will use in our ipynb. We can <code class="docutils literal notranslate"><span class="pre">hold</span> <span class="pre">shift</span></code> and drag the files into the ipynb/md to get the format of embedding files if we don’t want to type.</p>
+<p>In the <code class="docutils literal notranslate"><span class="pre">./content</span></code>, you can see folder with <a class="reference internal" href="folder-number.html"><span class="doc std std-doc">a number</span></a>, These numbers represent the owner of the resource. Inside the folder, there are specific folder subject and inside has the main file, <code class="docutils literal notranslate"><span class="pre">subject-name.md</span></code>. This file outline all the topic and link to file within the same folder. Inside the number folder is <code class="docutils literal notranslate"><span class="pre">data</span></code> which stores all of the extra file we will use in our ipynb. We can <code class="docutils literal notranslate"><span class="pre">hold</span> <span class="pre">shift</span></code> and drag the files into the ipynb/md to get the format of embedding files if we don’t want to type.</p>
+<blockquote>
+<div><p><strong>Tips</strong><br />
+In any .md files, <code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">shift</span> <span class="pre">+</span> <span class="pre">p</span></code> and search for “markdown preview” for live preview. <code class="docutils literal notranslate"><span class="pre">Hold</span> <span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">click</span></code> on links to use the links on md without preview mode.</p>
+</div></blockquote>
 <p>The file <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> is table of content of the html page, it is the list of page on the left of the page. See <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a> for more information.</p>
 </section>
 <section id="convention">

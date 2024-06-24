@@ -1,7 +1,7 @@
 # Naldo's Mathematic Wiki
 
 This is meant to be a wikipedia of all mathematical knowledge. It will prioritise derivations and relationship between topics.
-Take a look at [Physic-wiki](../physic/physic.ipynb) and [CS-wiki](../cs/cs.ipynb)
+Take a look at [Physic-wiki](../physic/physic.md) and [CS-wiki](../cs/cs.md)
 
 ## [Algebra](algebra.ipynb)
 
