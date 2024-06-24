@@ -7,9 +7,9 @@ Welcome to my domain...
 ## Subjects
 
 - [Math](./math/math.ipynb)
-- [Physic](./physic/physic.ipynb)
-- [CS](./cs/cs.ipynb)
-- [CS for AS/A2 Level](./as-a2-cs/cs.ipynb)
+- [Physic](./physic/physic.md)
+- [CS](./cs/cs.md)
+- [CS for AS/A2 Level](./as-a2-cs/cs.md)
 
 ---
 

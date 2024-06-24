@@ -5,9 +5,9 @@ parts:
   chapters:
   - file: 1/index
     sections:
-    - file: 1/index/math
+    - file: 1/math/math
       title: Math
-    - file: 1/index/physic/physic
+    - file: 1/physic/physic
       title: Physic
     - file: 1/as-a2-cs/cs
       title: AS-A2 CS
