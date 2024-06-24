@@ -1,8 +1,13 @@
 format: jb-book
-root: intro
+root: indexw
 chapters:
-- file: index
-- file: Mathematic/Math-wiki
-- file: AS-A2-CS/CS-wiki
-- file: Computing/CS-wiki
-- file: Physic/Physic-wiki
+- file: 1/index
+  title: Naldo's Wiki
+  - file: 1/math/math-wiki
+    title: Math
+  - file: 1/physic/physic-wiki
+    title: Physic
+  - file: 1/as-a2-cs/cs-wiki
+    title: CS AS-A2 
+  - file: 1/cs/cs-wiki
+    title: CS
