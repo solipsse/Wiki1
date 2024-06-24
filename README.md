@@ -1,2 +1,2 @@
 # README
-Read [Intro](./content/intro.md)
+Read [Getting Started](./content/index.md)
