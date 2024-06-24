@@ -3,6 +3,8 @@
 This is meant to be a wikipedia of all mathematical knowledge. It will prioritise derivations and relationship between topics.
 Take a look at [Physic-wiki](../physic/physic.md) and [CS-wiki](../cs/cs.md)
 
+[reading list][1]
+
 ## [Algebra](algebra.ipynb)
 
 - **Elementary Algebra**
@@ -73,3 +75,5 @@ Take a look at [Physic-wiki](../physic/physic.md) and [CS-wiki](../cs/cs.md)
 - **Mathematical Finance**
 
 ## [Notation](notation.ipynb)
+
+[1]:https://www.cs.ox.ac.uk/admissions/undergraduate/why_oxford/reading.html
