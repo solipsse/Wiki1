@@ -1,12 +1,13 @@
 format: jb-book
 root: index
 parts:
-- caption:  Wiki by person
+- caption:  Wiki
   chapters:
   - file: 1/index
-    - file: 1/math/math
+    sections:
+    - file: 1/index/math
       title: Math
-    - file: 1/physic/physic
+    - file: 1/index/physic/physic
       title: Physic
     - file: 1/as-a2-cs/cs
       title: AS-A2 CS
