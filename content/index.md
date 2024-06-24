@@ -62,7 +62,9 @@ There are several to edit ipynb files.
   - Add file.extension -> if new files added
   - Delete file.extension -> if the commit is only to delete file 
 
-Any recommendation with the documenation is appreciated.
+For people who prefer local VSCode, use `git clone <link of repo>` and any changes on that folder can be done in the same way as github's VSCode. Look above.
+
+Any recommendation with the documentation is appreciated.
 
 # Current struggle
 
