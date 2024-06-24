@@ -86,6 +86,8 @@ This is a wish list and a list of problems I encounter in hope that I will see a
 
 # Cheatsheet Docs
 
+[jupyter-book](https://jupyterbook.org/en/stable/file-types/index.html) for advance use. There are many useful code here than others.
+
 ## markdown, md
 
   - [cheatsheet1](https://www.markdownguide.org/cheat-sheet/)
