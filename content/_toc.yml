@@ -1,5 +1,5 @@
 format: jb-book
-root: indexw
+root: index
 chapters:
 - file: 1/index
   title: Naldo's Wiki
