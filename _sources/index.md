@@ -1,5 +1,7 @@
 
-# The project
+# Getting Started
+
+## The project
 
 This project was started due to a small intrinsic motivation to create complete and high-integrity information within subjects as simply as possible, and focus only on the main important ideas. These documents will be useful for learning and revision resources for anyone. By using ipynb, we can use md, and python allowing us to flexibly visualise data, and can be view on web as html or jupyter notebook.
 
