@@ -1,5 +1,5 @@
 format: jb-book
-root: indexw
+root: index
 parts:
 - caption:  Wiki/Book by Person
   chapters:
