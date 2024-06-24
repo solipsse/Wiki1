@@ -3,7 +3,7 @@
 This wiki contain general computer science information.
 Take a look at [Math-wiki](../math/math.md) and [Physic-wiki](../physic/physic.md)
 
-Take a look at [AS/A2 CS](../as-a2-cs/cs. md)
+Take a look at [AS/A2 CS](../as-a2-cs/cs.md)
 
 ## [Programming Paradigm](programming-paradigm.ipynb)
 

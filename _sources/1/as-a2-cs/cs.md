@@ -1,9 +1,9 @@
 # Naldo's AS-A2 CS Wiki
 
 This Wiki contain information revelant to pass AS-A2 CS.
-Take a look at [Math-wiki](../math/math.ipynb) and [Physic-wiki](../physic/physic.ipynb)
+Take a look at [Math-wiki](../math/math.md) and [Physic-wiki](../physic/physic.md)
 
-Take a look at [CS](../cs/cs.ipynb)
+Take a look at [CS](../cs/cs.md)
 
 ## Main Relationship between 
 
