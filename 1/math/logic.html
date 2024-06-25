@@ -62,8 +62,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/math/logic';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -367,7 +365,7 @@ document.write(`
   <blockquote>
 <div><p><a class="reference internal" href="math.html"><span class="doc std std-doc">Main Wiki</span></a></p>
 </div></blockquote>
-<section class="tex2jax_ignore mathjax_ignore" id="logic">
+<section id="logic">
 <h1>Logic<a class="headerlink" href="#logic" title="Permalink to this heading">#</a></h1>
 <section id="mathematical-logic-discrete">
 <h2>1. Mathematical Logic (Discrete)<a class="headerlink" href="#mathematical-logic-discrete" title="Permalink to this heading">#</a></h2>
@@ -385,12 +383,12 @@ document.write(`
 Example of a preposition</p>
 <ul class="simple">
 <li><p>“The earth is round.”</p></li>
-<li><p>“<span class="math notranslate nohighlight">\(5+6 = 11\)</span>”</p></li>
+<li><p>“$5+6 = 11$”</p></li>
 <li><p>“Tokyo is the capital of China”</p></li>
 <li><p>“There is life beyond our solar system”</p></li>
-<li><p>“<span class="math notranslate nohighlight">\(x^2 -25 =0\)</span>” (if we know x, the expression can be evaluate as true or false)</p></li>
+<li><p>“$x^2 -25 =0$” (if we know x, the expression can be evaluate as true or false)</p></li>
 </ul>
-<p><strong>Propositional variable</strong> holds an event that can either be True <span class="math notranslate nohighlight">\(\oplus\)</span> False.<br />
+<p><strong>Propositional variable</strong> holds an event that can either be True $\oplus$ False.<br />
 <strong>Truth tables</strong> demonstrates the value of a compound preposition.<br />
 <strong>Connectives</strong> are like operations using two prepositional variables.</p>
 <table class="table">
@@ -401,31 +399,31 @@ Example of a preposition</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\land\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p>$\land$</p></td>
 <td class="text-center"><p>Conjunction</p></td>
 <td class="text-center"><p>And</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\lor\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p>$\lor$</p></td>
 <td class="text-center"><p>Disjunction</p></td>
 <td class="text-center"><p>Or</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\oplus\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p>$\oplus$</p></td>
 <td class="text-center"><p>Exclusive Disjunction</p></td>
 <td class="text-center"><p>Xor</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\neg\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p>$\neg$</p></td>
 <td class="text-center"><p>Negation</p></td>
 <td class="text-center"><p>Not</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><span class="xref myst"><span class="math notranslate nohighlight">\(\to\)</span></span></p></td>
+<tr class="row-even"><td class="text-center"><p><span class="xref myst">$\to$</span></p></td>
 <td class="text-center"><p>Conditional</p></td>
 <td class="text-center"><p>If…then… OR …implies…</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\leftrightarrow\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p>$\leftrightarrow$</p></td>
 <td class="text-center"><p>Biconditional</p></td>
 <td class="text-center"><p>…if and only if… OR iff</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\Leftrightarrow\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p>$\Leftrightarrow$</p></td>
 <td class="text-center"><p>is equivalent to</p></td>
 <td class="text-center"><p>equal</p></td>
 </tr>
@@ -441,48 +439,47 @@ Example of a preposition</p>
 <strong>Order of operation</strong> is used to avoid confusion.</p>
 <ol class="arabic simple">
 <li><p>parentheses ()[]</p></li>
-<li><p>not <span class="math notranslate nohighlight">\(\neg\)</span></p></li>
-<li><p>and (left to right) <span class="math notranslate nohighlight">\(\land\)</span></p></li>
-<li><p>or (left to right) <span class="math notranslate nohighlight">\(\lor\)</span></p></li>
-<li><p>if…then <span class="math notranslate nohighlight">\(\to\)</span></p></li>
-<li><p>iff <span class="math notranslate nohighlight">\(\leftrightarrow\)</span></p></li>
+<li><p>not $\neg$</p></li>
+<li><p>and (left to right) $\land$</p></li>
+<li><p>or (left to right) $\lor$</p></li>
+<li><p>if…then $\to$</p></li>
+<li><p>iff $\leftrightarrow$</p></li>
 </ol>
 <p>“
-<span class="math notranslate nohighlight">\(\overbrace{p\land\underbrace{\neg q}_{2}\lor \underbrace{\neg \overbrace{(p\land q)}^{1}}_{2}}^{3,4 -&gt;}\)</span>
+$\overbrace{p\land\underbrace{\neg q}<em>{2}\lor \underbrace{\neg \overbrace{(p\land q)}^{1}}</em>{2}}^{3,4 -&gt;}$
 “</p>
 </section>
 <section id="de-morgan-s-laws">
 <h4>De Morgan’s Laws<a class="headerlink" href="#de-morgan-s-laws" title="Permalink to this heading">#</a></h4>
-<p><span class="math notranslate nohighlight">\(p\)</span> = “It will rain today”<br />
-<span class="math notranslate nohighlight">\(q\)</span> = “It will rain tommorow”<br />
-<span class="math notranslate nohighlight">\(p\land q\)</span> = “It will rain today <strong>and</strong> tommorow.  “
+<p>$p$ = “It will rain today”<br />
+$q$ = “It will rain tommorow”<br />
+$p\land q$ = “It will rain today <strong>and</strong> tommorow.  “
 This statement will be false when i.e. Not (It will rain today and tommorow) = It Not (rain today) or Not (rain tommorow).</p>
-<p><span class="math notranslate nohighlight">\(\neg(p\land q) = \neg p \lor \neg q\)</span></p>
-<p><span class="math notranslate nohighlight">\(p\lor q\)</span> = It will rain today <strong>or</strong> tommorow.<br />
+<p>$\neg(p\land q) = \neg p \lor \neg q$</p>
+<p>$p\lor q$ = It will rain today <strong>or</strong> tommorow.<br />
 This statement will be false when i.e. Not (It will rain today or tommorow) = It Not (rain today) and Not (rain tommorow).</p>
-<p><span class="math notranslate nohighlight">\(\neg(p\lor q) = \neg p \land \neg q\)</span></p>
+<p>$\neg(p\lor q) = \neg p \land \neg q$</p>
 </section>
 <section id="conditional-logic-as-propositional-expression">
 <h4>Conditional Logic as propositional expression<a class="headerlink" href="#conditional-logic-as-propositional-expression" title="Permalink to this heading">#</a></h4>
-<p>From our nice intuition proof in <span class="xref myst">Conditional Truth Table</span>, We have arrive at <span class="math notranslate nohighlight">\(\neg (p \to q) = p \land \neg q\)</span>. Then we will need a lemma, which state that negating a negation is equal to not doing anything.<span class="math notranslate nohighlight">\(\neg (\neg p) = p\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{align*}
-\Rightarrow p \to q &amp;= \neg (p \land \neg q) \\
-&amp;= \neg p \lor \neg (\neg q) \text{, De Morgan's Law}\\
+<p>From our nice intuition proof in <span class="xref myst">Conditional Truth Table</span>, We have arrive at $\neg (p \to q) = p \land \neg q$. Then we will need a lemma, which state that negating a negation is equal to not doing anything.$\neg (\neg p) = p$.</p>
+<p>$$\begin{align*}
+\Rightarrow p \to q &amp;= \neg (p \land \neg q) \
+&amp;= \neg p \lor \neg (\neg q) \text{, De Morgan’s Law}\
 \therefore p \to q &amp;\Leftrightarrow \neg p \lor q
-\end{align*}\end{split}\]</div>
-<p>To prove this, you can create the truth table and compare!</p>
+\end{align*}$$<br />
+To prove this, you can create the truth table and compare!</p>
 </section>
 <section id="related-conditional">
 <h4>Related Conditional<a class="headerlink" href="#related-conditional" title="Permalink to this heading">#</a></h4>
-<p>We end up at different type of conditional statement by changing part of the conditionoal, <span class="math notranslate nohighlight">\(p \to q\)</span>. For the following think of the bold word as a “<span class="math notranslate nohighlight">\(f(\text{conditional}) = \text{something} \)</span>“<br />
-<strong>Converse</strong> <span class="math notranslate nohighlight">\((p \to q) = q \to p\)</span><br />
-<strong>Inverse</strong> <span class="math notranslate nohighlight">\((p \to q) = \neg p \to \neg q\)</span><br />
-<strong>Contrapositive</strong> <span class="math notranslate nohighlight">\((p \to q) = \neg q \to \neg p\)</span></p>
+<p>We end up at different type of conditional statement by changing part of the conditionoal, $p \to q$. For the following think of the bold word as a “$f(\text{conditional}) = \text{something} $”<br />
+<strong>Converse</strong> $(p \to q) = q \to p$<br />
+<strong>Inverse</strong> $(p \to q) = \neg p \to \neg q$<br />
+<strong>Contrapositive</strong> $(p \to q) = \neg q \to \neg p$</p>
 <p>From this you can draw the truth table of each. <strong>Do this as excercise</strong>? What can you observe. Or you can use our intuitive proof to think about how these function of condition related to the condition.<br />
 Ans: a <strong>conditional</strong> is only <strong>equal</strong> to <strong>its contrapositive</strong>!</p>
 <blockquote>
-<div><p><span class="math notranslate nohighlight">\(p \gets q = q \to p\)</span></p>
+<div><p>$p \gets q = q \to p$</p>
 </div></blockquote>
 </section>
 </section>
@@ -544,7 +541,7 @@ Ans: a <strong>conditional</strong> is only <strong>equal</strong> to <strong>it
 </ul>
 <p>An <strong>axiom</strong> is a statement that we accept without prove. Everything we prove must then be built off our axioms. The fewer the axioms the better(i.e. less assumption).</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(0\cdot a = 0\)</span></p></li>
+<li><p>$0\cdot a = 0$</p></li>
 </ul>
 <p>We use axioms to prove <strong>theorem</strong>. We can use our result to prove more Theorems. By doing this we accumulate the tools we have.</p>
 <ul class="simple">
@@ -554,7 +551,7 @@ Ans: a <strong>conditional</strong> is only <strong>equal</strong> to <strong>it
 <p>Results that comes easily from a theorem are called <strong>corollaries</strong></p>
 <p>A <strong>trivial</strong> solution is an <em>obvious</em> solution</p>
 <ul class="simple">
-<li><p>Find all [integer](diophantine equation) a, b, c such that <span class="math notranslate nohighlight">\(a^n + b^n = c^n\)</span> Then a, b, c = 0 is a trivial solution.</p></li>
+<li><p>Find all [integer](diophantine equation) a, b, c such that $a^n + b^n = c^n$ Then a, b, c = 0 is a trivial solution.</p></li>
 </ul>
 </section>
 <section id="euclidean-geometry-plane-geometry">
@@ -565,7 +562,7 @@ Ans: a <strong>conditional</strong> is only <strong>equal</strong> to <strong>it
 <li><p>A straight line may be extended infitely.</p></li>
 <li><p>A circle may be drawn with any center and any radius.</p></li>
 <li><p>All right angles have equal measure.</p></li>
-<li><p>Given a line that interseects two other lines, if the angle made by those two lines with the first line add up to less than <span class="math notranslate nohighlight">\(180\text{\textdegree}\)</span> on thee same side, then those two lines must eventually meet on that side of the first line. This is also known as The <strong>Parallel Postulate</strong>.</p></li>
+<li><p>Given a line that interseects two other lines, if the angle made by those two lines with the first line add up to less than $180\text{\textdegree}$ on thee same side, then those two lines must eventually meet on that side of the first line. This is also known as The <strong>Parallel Postulate</strong>.</p></li>
 </ol>
 <p><img alt="" src="../../_images/euclid-postulates.gif" /></p>
 <p>The 5th axioms creates problems for many mathematician. Many have tried to use the first four axioms to prove the 5th but nobody could. It turns out that this postulate is only true for a geometry on a plane.</p>

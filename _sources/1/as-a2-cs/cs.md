@@ -1,26 +1,9 @@
-# Naldo's AS-A2 CS Wiki
+# Naldo's CS Wiki
 
-This Wiki contain information revelant to pass AS-A2 CS.
+This wiki contain general computer science information.
 Take a look at [Math-wiki](../math/math.md) and [Physic-wiki](../physic/physic.md)
 
-Take a look at [CS](../cs/cs.md)
-
-## Main Relationship between 
-
-[<img src="./as-a2-link.jpg" width="300"/>](./as-a2-link.jpg)
-
-## [Software Engineering](software-engineering.ipynb)
-
-- **Software Development Life Cycle (SDLC)**
-- **Software Development Methodologies**
-- **Design Patterns**
-- **Version Control Systems**
-
-## [Algorithms and Data Structures](algorithms-and-data-structures.ipynb)
-
-- **Basic Data Structures**
-- **Trees and Graphs**
-- **Algorithms**
+Take a look at [AS/A2 CS](../as-a2-cs/cs.md)
 
 ## [Programming Paradigm](programming-paradigm.ipynb)
 
@@ -29,6 +12,19 @@ Take a look at [CS](../cs/cs.md)
 - **Functional Programming**
 - **Scripting Languages**
 - **Declarative Programming**
+
+## [Algorithms and Data Structures](algorithms-and-data-structures.ipynb)
+
+- **Basic Data Structures**
+- **Trees and Graphs**
+- **Algorithms**
+
+## [Software Engineering](software-engineering.ipynb)
+
+- **Software Development Life Cycle (SDLC)**
+- **Software Development Methodologies**
+- **Design Patterns**
+- **Version Control Systems**
 
 ## [Computer Architecture](computer-architecture.ipynb)
 
@@ -42,6 +38,12 @@ Take a look at [CS](../cs/cs.md)
 - **Basic Concepts**
 - **Advanced Topics**
 - **Popular Operating Systems**
+
+## [Databases](databases.ipynb)
+
+- **Database Models**
+- **SQL (Structured Query Language)**
+- **Database Design**
 
 ## [Computer Networks](computer-networks.ipynb)
 
@@ -64,12 +66,6 @@ Take a look at [CS](../cs/cs.md)
 - **Network Security**
 - **Application Security**
 
-## [Databases](databases.ipynb)
-
-- **Database Models**
-- **SQL (Structured Query Language)**
-- **Database Design**
-
 ## [Artificial Intelligence](artificial-intelligence.ipynb)
 
 - **Machine Learning**
@@ -77,8 +73,33 @@ Take a look at [CS](../cs/cs.md)
 - **Natural Language Processing (NLP)**
 - **Robotics**
 
-## [Ethics](ethics.ipynb)
+## [Web Development](web-development.ipynb)
 
-- **Basic Concept**
-- **Licensing**
-- **Copyright**
+- **Frontend Development**
+- **Backend Development**
+- **Full Stack Development**
+
+## [Human-Computer Interaction](human-computer-interaction.ipynb)
+
+- **User Interface Design**
+- **User Experience (UX)**
+- **Accessibility**
+
+## [Additional Topics](additional-topics.ipynb)
+
+- **Quantum Computing**
+- **Blockchain**
+- **Internet of Things (IoT)**
+
+## [Interdisciplinary Areas](interdisciplinary.ipynb)
+
+- **Bioinformatics**
+- **Computational Linguistics**
+- **Data Science**
+
+## [Theoretical Computer Science](theoretical-computer-science.ipynb)
+
+- **Automata Theory**
+- **Computability Theory**
+- **Complexity Theory**
+- **Formal Languages**

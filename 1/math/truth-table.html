@@ -62,8 +62,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/math/truth-table';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -336,16 +334,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="truth-table-reference">
+  <section id="truth-table-reference">
 <h1>Truth Table Reference<a class="headerlink" href="#truth-table-reference" title="Permalink to this heading">#</a></h1>
 <p>Have a look at <span class="xref myst">Logic</span></p>
 <section id="and">
 <h2>And<a class="headerlink" href="#and" title="Permalink to this heading">#</a></h2>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\land q\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p>$p$</p></th>
+<th class="head text-center"><p>$q$</p></th>
+<th class="head text-center"><p>$p\land q$</p></th>
 </tr>
 </thead>
 <tbody>
@@ -372,9 +370,9 @@ document.write(`
 <h2>Or<a class="headerlink" href="#or" title="Permalink to this heading">#</a></h2>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\lor q\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p>$p$</p></th>
+<th class="head text-center"><p>$q$</p></th>
+<th class="head text-center"><p>$p\lor q$</p></th>
 </tr>
 </thead>
 <tbody>
@@ -401,9 +399,9 @@ document.write(`
 <h2>Xor<a class="headerlink" href="#xor" title="Permalink to this heading">#</a></h2>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\oplus q\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p>$p$</p></th>
+<th class="head text-center"><p>$q$</p></th>
+<th class="head text-center"><p>$p\oplus q$</p></th>
 </tr>
 </thead>
 <tbody>
@@ -430,8 +428,8 @@ document.write(`
 <h2>Not<a class="headerlink" href="#not" title="Permalink to this heading">#</a></h2>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p>$p$</p></th>
+<th class="head text-center"><p>$\neg p$</p></th>
 </tr>
 </thead>
 <tbody>
@@ -448,9 +446,9 @@ document.write(`
 <h2>Conditional<a class="headerlink" href="#conditional" title="Permalink to this heading">#</a></h2>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\to q\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p>$p$</p></th>
+<th class="head text-center"><p>$q$</p></th>
+<th class="head text-center"><p>$p\to q$</p></th>
 </tr>
 </thead>
 <tbody>
@@ -473,16 +471,16 @@ document.write(`
 </tbody>
 </table>
 <p>!!!</p>
-<p><span class="math notranslate nohighlight">\(p\)</span> = “you win”<br />
-<span class="math notranslate nohighlight">\(q\)</span> = “I give you money”<br />
-<span class="math notranslate nohighlight">\(p\to q\)</span> = “if you win then I give you money.”<br />
-What would make this statement false? i.e. <span class="math notranslate nohighlight">\(\neg (p \to q)\)</span>?<br />
+<p>$p$ = “you win”<br />
+$q$ = “I give you money”<br />
+$p\to q$ = “if you win then I give you money.”<br />
+What would make this statement false? i.e. $\neg (p \to q)$?<br />
 Well, it is false only when, “if you win <em>and then</em> I <strong>don’t</strong> give you money”<br />
-<span class="math notranslate nohighlight">\(\therefore\)</span> “If you lose and I give you money”, the statement is still ok! I didn’t break any promise!</p>
+$\therefore$ “If you lose and I give you money”, the statement is still ok! I didn’t break any promise!</p>
 <p>!!!</p>
 <p>a conditional is equivalent to its contrapositive.<br />
-<span class="math notranslate nohighlight">\(\neg q \to \neg p\)</span> = “If I didn’t give you money then you must not have won”<br />
-now look back to truth table of <span class="math notranslate nohighlight">\(p \to q\)</span> and notice that if p then not q is false. Block that line and read the table, which states that the if you didn’t money then you must not have won base from the condition. So (<span class="math notranslate nohighlight">\(\neg q \to \neg p\)</span>) is a true statement.</p>
+$\neg q \to \neg p$ = “If I didn’t give you money then you must not have won”<br />
+now look back to truth table of $p \to q$ and notice that if p then not q is false. Block that line and read the table, which states that the if you didn’t money then you must not have won base from the condition. So ($\neg q \to \neg p$) is a true statement.</p>
 <p>Can you do the same to prove why a conditional is not equal to its inverse or converse? i.e. prove the statement would be false.</p>
 </section>
 <section id="biconditional">
@@ -490,9 +488,9 @@ now look back to truth table of <span class="math notranslate nohighlight">\(p \
 <p>iff</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\leftrightarrow q\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p>$p$</p></th>
+<th class="head text-center"><p>$q$</p></th>
+<th class="head text-center"><p>$p\leftrightarrow q$</p></th>
 </tr>
 </thead>
 <tbody>

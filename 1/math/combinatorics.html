@@ -62,6 +62,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/math/combinatorics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -317,6 +318,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principles">1. Counting Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-distinguisable">Is it distinguisable?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-replacement">Are there replacement?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rules-of-sum-and-products">Rules of sum and products</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#casework-counting-and-rules-of-sum">Casework Counting and rules of sum</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-number-of-numbers-in-a-n">The number of numbers in [a,n]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arrangement">Arrangement</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#permutation">Permutation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#combination">Combination</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inclusion-exclusion-principles">Inclusion-Exclusion Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#overcounting">Overcounting</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complementary-counting">Complementary Counting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connstructive-counting">Connstructive Counting</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinatorial-theory-discrete">1. Combinatorial Theory (Discrete)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations-and-combinations">Permutations and combinations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-coefficients">Binomial coefficients</a></li>
@@ -347,6 +369,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cutting-planes-and-branch-and-bound-methods">Cutting planes and branch-and-bound methods</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinatorics-prove">Combinatorics prove</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-counting">Double Counting</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -361,8 +387,95 @@ document.write(`
   <blockquote>
 <div><p><a class="reference internal" href="math.html"><span class="doc std std-doc">Main Wiki</span></a></p>
 </div></blockquote>
-<section class="tex2jax_ignore mathjax_ignore" id="combinatorics">
+<section id="combinatorics">
 <h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this heading">#</a></h1>
+<section id="counting-principles">
+<h2>1. Counting Principles<a class="headerlink" href="#counting-principles" title="Permalink to this heading">#</a></h2>
+<p>Following the upcoming principles to be discussed will ease our counting that where we can find the method to take immediately. We will borrow some logics as well!</p>
+<section id="is-it-distinguisable">
+<h3>Is it distinguisable?<a class="headerlink" href="#is-it-distinguisable" title="Permalink to this heading">#</a></h3>
+<p>A distinguisable object is unique.</p>
+<ul class="simple">
+<li><p>Distinct people</p></li>
+<li><p>Distinct solutions</p></li>
+<li><p><span class="xref myst">Distinct set</span> of arrangement.</p></li>
+</ul>
+</section>
+<section id="are-there-replacement">
+<h3>Are there replacement?<a class="headerlink" href="#are-there-replacement" title="Permalink to this heading">#</a></h3>
+<p>$\overline{replacement} \to$ $\Delta( n(success)$[^1] and $ n(possible))$. Thus, $\Delta(probability)$, and we need to choose our counting method wisely!</p>
+</section>
+<section id="rules-of-sum-and-products">
+<h3>Rules of sum and products<a class="headerlink" href="#rules-of-sum-and-products" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head text-center"><p>Sum</p></th>
+<th class="head text-center"><p>Product</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Logic</p></td>
+<td class="text-center"><p>$A+B$</p></td>
+<td class="text-center"><p>$AB$ (A and then B)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of ways</p></td>
+<td class="text-center"><p>$a+b$</p></td>
+<td class="text-center"><p>$ab$</p></td>
+</tr>
+</tbody>
+</table>
+<aside class="sidebar">
+<p>A = first condition<br />
+B = second condition</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+n(A)=a \\
+n(B)=b
+\end{align*}\]</div>
+</aside>
+<p>In general, $add$ when we need to pick one OR another but not simultaneously, and $multiply$ when $\overline{add}$, i.e. pick one AND another simultaneously.</p>
+<section id="casework-counting-and-rules-of-sum">
+<h4>Casework Counting and rules of sum<a class="headerlink" href="#casework-counting-and-rules-of-sum" title="Permalink to this heading">#</a></h4>
+<p>Casework is a counting techniques that utilise rules of sum. We looks at all the conditions that match the OR logic and splits them into cases. This can be daunting; having many cases in exam may be a sign that we need to find a smarter way of thinking. For example, complementary counting.</p>
+</section>
+</section>
+<section id="the-number-of-numbers-in-a-n">
+<h3>The number of numbers in [a,n]<a class="headerlink" href="#the-number-of-numbers-in-a-n" title="Permalink to this heading">#</a></h3>
+<p>$[1,n]$ has $n$ numbers. As shown:
+$$
+1,2, \cdots , n
+$$
+$[a,n]$ has $n-a+1$ numbers. As shown:
+\begin{array}{cccc}
+a, &amp; a+1, &amp; \cdots &amp; n\
+1, &amp; 2, &amp; \cdots &amp; (n-a)+1; \blacksquare
+\end{array}
+As seen, we take the first sequence and trasform it to a familiar $[1,n]$, where we can read off the amount of number.<br />
+This will be useful when deriving formulars of Permutation and Combination.</p>
+</section>
+<section id="arrangement">
+<h3>Arrangement<a class="headerlink" href="#arrangement" title="Permalink to this heading">#</a></h3>
+<section id="permutation">
+<h4>Permutation<a class="headerlink" href="#permutation" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="combination">
+<h4>Combination<a class="headerlink" href="#combination" title="Permalink to this heading">#</a></h4>
+</section>
+</section>
+<section id="inclusion-exclusion-principles">
+<h3>Inclusion-Exclusion Principles<a class="headerlink" href="#inclusion-exclusion-principles" title="Permalink to this heading">#</a></h3>
+<section id="overcounting">
+<h4>Overcounting<a class="headerlink" href="#overcounting" title="Permalink to this heading">#</a></h4>
+</section>
+</section>
+<section id="complementary-counting">
+<h3>Complementary Counting<a class="headerlink" href="#complementary-counting" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="connstructive-counting">
+<h3>Connstructive Counting<a class="headerlink" href="#connstructive-counting" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
 <section id="combinatorial-theory-discrete">
 <h2>1. Combinatorial Theory (Discrete)<a class="headerlink" href="#combinatorial-theory-discrete" title="Permalink to this heading">#</a></h2>
 <section id="permutations-and-combinations">
@@ -435,7 +548,14 @@ document.write(`
 </section>
 <section id="cutting-planes-and-branch-and-bound-methods">
 <h3>Cutting planes and branch-and-bound methods<a class="headerlink" href="#cutting-planes-and-branch-and-bound-methods" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
 <hr class="docutils" />
+<section id="combinatorics-prove">
+<h2>Combinatorics prove<a class="headerlink" href="#combinatorics-prove" title="Permalink to this heading">#</a></h2>
+<section id="double-counting">
+<h3>Double Counting<a class="headerlink" href="#double-counting" title="Permalink to this heading">#</a></h3>
+<p>[1]: To be successful the conditions must match with the conditions for which we are counting.</p>
 </section>
 </section>
 </section>
@@ -485,6 +605,27 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principles">1. Counting Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-distinguisable">Is it distinguisable?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-replacement">Are there replacement?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rules-of-sum-and-products">Rules of sum and products</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#casework-counting-and-rules-of-sum">Casework Counting and rules of sum</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-number-of-numbers-in-a-n">The number of numbers in [a,n]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arrangement">Arrangement</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#permutation">Permutation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#combination">Combination</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inclusion-exclusion-principles">Inclusion-Exclusion Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#overcounting">Overcounting</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complementary-counting">Complementary Counting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connstructive-counting">Connstructive Counting</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinatorial-theory-discrete">1. Combinatorial Theory (Discrete)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations-and-combinations">Permutations and combinations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-coefficients">Binomial coefficients</a></li>
@@ -513,6 +654,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approximation-algorithms">Approximation algorithms</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polyhedral-combinatorics">Polyhedral combinatorics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cutting-planes-and-branch-and-bound-methods">Cutting planes and branch-and-bound methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinatorics-prove">Combinatorics prove</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-counting">Double Counting</a></li>
 </ul>
 </li>
 </ul>
