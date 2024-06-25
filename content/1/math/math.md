@@ -33,6 +33,7 @@ Take a look at [Physic-wiki](../physic/physic.md) and [CS-wiki](../cs/cs.md)
 
 ## [Combinatorics](combinatorics.ipynb)
 
+- **Counting Principles**
 - **Combinatorial Theory (Discrete)**
 - **Graph Theory (Discrete)**
 - **Combinatorial Optimization (Discrete)**

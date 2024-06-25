@@ -1,1 +1,4 @@
 title: Wiki Catalog
+parse:
+  myst_enable_extensions:
+    - amsmath
