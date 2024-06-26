@@ -62,7 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/math/combinatorics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -387,7 +388,7 @@ document.write(`
   <blockquote>
 <div><p><a class="reference internal" href="math.html"><span class="doc std std-doc">Main Wiki</span></a></p>
 </div></blockquote>
-<section id="combinatorics">
+<section class="tex2jax_ignore mathjax_ignore" id="combinatorics">
 <h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this heading">#</a></h1>
 <section id="counting-principles">
 <h2>1. Counting Principles<a class="headerlink" href="#counting-principles" title="Permalink to this heading">#</a></h2>
@@ -403,7 +404,7 @@ document.write(`
 </section>
 <section id="are-there-replacement">
 <h3>Are there replacement?<a class="headerlink" href="#are-there-replacement" title="Permalink to this heading">#</a></h3>
-<p>$\overline{replacement} \to$ $\Delta( n(success)$[^1] and $ n(possible))$. Thus, $\Delta(probability)$, and we need to choose our counting method wisely!</p>
+<p><span class="math notranslate nohighlight">\(\overline{replacement} \to\)</span> <span class="math notranslate nohighlight">\(\Delta( n(success)\)</span>[^1] and <span class="math notranslate nohighlight">\( n(possible))\)</span>. Thus, <span class="math notranslate nohighlight">\(\Delta(probability)\)</span>, and we need to choose our counting method wisely!</p>
 </section>
 <section id="rules-of-sum-and-products">
 <h3>Rules of sum and products<a class="headerlink" href="#rules-of-sum-and-products" title="Permalink to this heading">#</a></h3>
@@ -416,25 +417,24 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Logic</p></td>
-<td class="text-center"><p>$A+B$</p></td>
-<td class="text-center"><p>$AB$ (A and then B)</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(A+B\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(AB\)</span> (A and then B)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Number of ways</p></td>
-<td class="text-center"><p>$a+b$</p></td>
-<td class="text-center"><p>$ab$</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(a+b\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(ab\)</span></p></td>
 </tr>
 </tbody>
 </table>
 <aside class="sidebar">
 <p>A = first condition<br />
 B = second condition</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-n(A)=a \\
+<p>\begin{align*}
+n(A)=a \
 n(B)=b
-\end{align*}\]</div>
+\end{align*}</p>
 </aside>
-<p>In general, $add$ when we need to pick one OR another but not simultaneously, and $multiply$ when $\overline{add}$, i.e. pick one AND another simultaneously.</p>
+<p>In general, <span class="math notranslate nohighlight">\(add\)</span> when we need to pick one OR another but not simultaneously, and <span class="math notranslate nohighlight">\(multiply\)</span> when <span class="math notranslate nohighlight">\(\overline{add}\)</span>, i.e. pick one AND another simultaneously.</p>
 <section id="casework-counting-and-rules-of-sum">
 <h4>Casework Counting and rules of sum<a class="headerlink" href="#casework-counting-and-rules-of-sum" title="Permalink to this heading">#</a></h4>
 <p>Casework is a counting techniques that utilise rules of sum. We looks at all the conditions that match the OR logic and splits them into cases. This can be daunting; having many cases in exam may be a sign that we need to find a smarter way of thinking. For example, complementary counting.</p>
@@ -442,16 +442,16 @@ n(B)=b
 </section>
 <section id="the-number-of-numbers-in-a-n">
 <h3>The number of numbers in [a,n]<a class="headerlink" href="#the-number-of-numbers-in-a-n" title="Permalink to this heading">#</a></h3>
-<p>$[1,n]$ has $n$ numbers. As shown:
-$$
+<p><span class="math notranslate nohighlight">\([1,n]\)</span> has <span class="math notranslate nohighlight">\(n\)</span> numbers. As shown:
+$<span class="math notranslate nohighlight">\( 
 1,2, \cdots , n
-$$
-$[a,n]$ has $n-a+1$ numbers. As shown:
+\)</span><span class="math notranslate nohighlight">\(
+\)</span>[a,n]<span class="math notranslate nohighlight">\( has \)</span>n-a+1<span class="math notranslate nohighlight">\( numbers. As shown:
 \begin{array}{cccc}
-a, &amp; a+1, &amp; \cdots &amp; n\
-1, &amp; 2, &amp; \cdots &amp; (n-a)+1; \blacksquare
+a, &amp; a+1, &amp; \cdots &amp; n\\
+1, &amp; 2, &amp; \cdots &amp; (n-a)+1\; \blacksquare
 \end{array}
-As seen, we take the first sequence and trasform it to a familiar $[1,n]$, where we can read off the amount of number.<br />
+As seen, we take the first sequence and trasform it to a familiar \)</span>[1,n]$, where we can read off the amount of number.<br />
 This will be useful when deriving formulars of Permutation and Combination.</p>
 </section>
 <section id="arrangement">
