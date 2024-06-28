@@ -79,6 +79,11 @@ This is a wish list and a list of problems I encounter in hope that I will see a
 - Theming the Jupyter Book website with css. [Target Colorscheme](https://rosepinetheme.com/palette/) [Target Font](https://www.jetbrains.com/lp/mono/) (considering it needs to have math symbols and font ligature)
 - Implement a way for people to change the fonts.
 
+## Latex
+
+- \underbar can't be use, use \underline instead.
+
+
 # Collaborator, Maintainer and Creator
 
 - Creator: solipsse
