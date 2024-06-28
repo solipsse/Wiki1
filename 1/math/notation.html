@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/math/notation';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -223,7 +225,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/1/math/notation.ipynb" target="_blank"
+      <li><a href="../../_sources/1/math/notation.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -233,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -294,7 +296,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -310,6 +314,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinatoric">Combinatoric</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -324,7 +336,41 @@ document.write(`
 </div></blockquote>
 <section class="tex2jax_ignore mathjax_ignore" id="notation">
 <h1>Notation<a class="headerlink" href="#notation" title="Permalink to this heading">#</a></h1>
-<iframe src="./CIE-Notation-List.pdf"></section>
+<section id="combinatoric">
+<h2>Combinatoric<a class="headerlink" href="#combinatoric" title="Permalink to this heading">#</a></h2>
+<p>if P is a proposition then</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Symbol</p></th>
+<th class="head text-left"><p>meaning</p></th>
+<th class="head text-left"><p>read as</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(|P|\)</span></p></td>
+<td class="text-left"><p>Number of things satisfy P</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(_A|word|\)</span></p></td>
+<td class="text-left"><p>Number of Arrangement of Word</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(_A|r\hspace{1ex}\textit{things}, n \hspace{1ex}\textit{things}|\)</span></p></td>
+<td class="text-left"><p>Number of arrangement of choosing r things from n things</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(R R D\)</span></p></td>
+<td class="text-left"><p>is restricted, is repeat, and Distinct</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\bar{R}\bar{R}\bar{D}\)</span></p></td>
+<td class="text-left"><p>not restrict, not repeat,and not distinct</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -338,13 +384,13 @@ document.write(`
             mode: "python"
         },
         kernelOptions: {
-            name: "python",
+            name: "python3",
             path: "./1/math"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -362,6 +408,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinatoric">Combinatoric</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

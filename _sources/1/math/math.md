@@ -5,6 +5,7 @@ Take a look at [Physic-wiki](../physic/physic.md) and [CS-wiki](../cs/cs.md)
 
 [reading list][1]
 [AoPS Wiki][2]
+[writing area](writing.md)
 
 ## [Algebra](algebra.ipynb)
 
@@ -76,7 +77,7 @@ Take a look at [Physic-wiki](../physic/physic.md) and [CS-wiki](../cs/cs.md)
 - **Mathematical Economics**
 - **Mathematical Finance**
 
-## [Notation](notation.ipynb)
+## [Notation](notation.md)
 
 [1]:https://www.cs.ox.ac.uk/admissions/undergraduate/why_oxford/reading.html
 [2]:https://artofproblemsolving.com/wiki/index.php/Resources_for_mathematics_competitions
