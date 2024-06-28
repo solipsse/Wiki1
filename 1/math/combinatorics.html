@@ -388,15 +388,15 @@ document.write(`
 </div></blockquote>
 <section class="tex2jax_ignore mathjax_ignore" id="combinatorics">
 <h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this heading">#</a></h1>
-<p>Following the upcoming principles to be discussed will ease our counting that where we can find the method to take immediately. We will borrow some logics as well so learn that first!</p>
+<p>Following the upcoming principles to be discussed will ease our counting that we can find the method to take immediately. We will borrow some logics as well so learn that first!</p>
 <section id="preliminary-consideration">
 <h2>Preliminary Consideration<a class="headerlink" href="#preliminary-consideration" title="Permalink to this heading">#</a></h2>
 <section id="restriction-repeatability-and-distinguishaibilit">
 <h3>Restriction, Repeatability and Distinguishaibilit<a class="headerlink" href="#restriction-repeatability-and-distinguishaibilit" title="Permalink to this heading">#</a></h3>
-<p><strong>Restriction</strong> are condition that our counting must satisfy. This reduce the totle possible outcomes. It can be count using constructive and complementary approach or by case.</p>
-<p>An object are consider to be <strong>repeatable</strong> they can be resused or replaced. E.g. a binary number with n bit has <span class="math notranslate nohighlight">\(2^n\)</span> total possibility because each one can be 0 or 1, and using 1 doesn’t mean it can’t use 1 again. <span class="math notranslate nohighlight">\(\overline{Replacemnet} = \Delta {(possible \land total)} = \Delta {probability}\)</span></p>
-<p><strong>Distinguishable</strong> object are unique, such as distinct people, distinct solutions, and distinct set of things.</p>
-<p>Refer to <a class="reference internal" href="notation.html"><span class="doc std std-doc">Notation</span></a> to understand how we will generalise solving each counting problem.</p>
+<p><strong>Restriction</strong> are condition that our counting must satisfy. This reduce the total possible outcomes. It can be count using constructive and complementary approach or by case.</p>
+<p>Objects are consider to be <strong>repeatable</strong> if they can be reused or replaced. E.g. a binary number with n bit has <span class="math notranslate nohighlight">\(2^n\)</span> total possibility because each one can be 0 or 1, and using 1 doesn’t mean it can’t use 1 again. <span class="math notranslate nohighlight">\(\overline{replace} = \Delta {(possible \land total)} = \Delta {probability}\)</span></p>
+<p><strong>Distinguishable</strong> objects are unique, such as distinct people, distinct solutions, and distinct sets of things. In combination, we see that set of objects are indistinguishable.</p>
+<p>Refer to <a class="reference internal" href="notation.html"><span class="doc std std-doc">Notation</span></a> to understand how we will generalise solving each counting problems.</p>
 <p>We will use these three consideration points to find a way to tackle with enumeration problems.</p>
 </section>
 <section id="rules-of-sum-and-products">
@@ -443,7 +443,7 @@ document.write(`
 <section id="arrangement">
 <h2>Arrangement<a class="headerlink" href="#arrangement" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
-\[_{A}|WORD| =\underbar{4}\hspace{.5ex}\underbar{3}\hspace{.5ex}\underbar{2}\hspace{.5ex}\underbar{1}=4!\hspace{10ex} \bar{R}\bar{R}D\]</div>
+\[_{A}|WORD| =\underline{4}\hspace{.5ex}\underline{3}\hspace{.5ex}\underline{2}\hspace{.5ex}\underline{1}=4!\hspace{10ex} \bar{R}\bar{R}D\]</div>
 <p>Looking at the number of characters to place in 4 spaces, we can put 4, then 3, then 2 and then 1. {Rule of product}</p>
 <section id="choosing-from-n-things-to-put-into-r-places">
 <h3>Choosing from n things to put into r places<a class="headerlink" href="#choosing-from-n-things-to-put-into-r-places" title="Permalink to this heading">#</a></h3>
@@ -452,12 +452,12 @@ document.write(`
 <p>The arrangement above can be seen as a speacial permutation P(4,4) = 4!</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align*}
-_A|3\text{ books}, 5\text{ books}| &amp;= \underbar{5}\hspace{.5ex}\underbar{4}\hspace{.5ex}\underbar{3}\hspace{10ex} \bar{R}\bar{R}D\\
+_A|3\text{ books}, 5\text{ books}| &amp;= \underline{5}\hspace{.5ex}\underline{4}\hspace{.5ex}\underline{3}\hspace{10ex} \bar{R}\bar{R}D\\
 &amp;= \frac{5!}{2!}\\
 &amp;=P(5,3)
 \end{align*}\end{split}\]</div>
 <p>Permutation can be thought purely with law of product, but if we can generalise then we will do work faster.</p>
-<p><span class="math notranslate nohighlight">\(P(n,r)\equiv n^{\underbar{r}} \equiv \frac{n!}{(n-r)!}\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(n,r)\equiv n^{\underline{r}} \equiv \frac{n!}{(n-r)!}\)</span></p>
 </section>
 <section id="combination">
 <h4>Combination<a class="headerlink" href="#combination" title="Permalink to this heading">#</a></h4>
@@ -471,7 +471,7 @@ _{A}|AABBB| &amp;= _A|2 \text{ A's}, 5\text{ Letter}|\hspace{10ex} \bar{R}\bar{R
 <p>We can use law of product by assuming A and B are distinct and then divide to account for overcounting as each combination of A’s and B’s will be repeated by the amount of possible combinations A’s and B’s.</p>
 <p>For 5 place we choose 2 A <span class="math notranslate nohighlight">\(\to\)</span> fill what left with B (1 way becuase all B are <span class="math notranslate nohighlight">\(\bar{D}\)</span>) or<br />
 For 5 place we choose 3 B <span class="math notranslate nohighlight">\(\to\)</span> fill what left with A (1 way becuase all A are <span class="math notranslate nohighlight">\(\bar{D}\)</span>)</p>
-<p><span class="math notranslate nohighlight">\(C(n,r) \equiv \frac{n^{\underbar{r}}}{r!}\equiv \frac{n!}{r!(n-r)!} \equiv C(n,n-r)\)</span></p>
+<p><span class="math notranslate nohighlight">\(C(n,r) \equiv \frac{n^{\underline{r}}}{r!}\equiv \frac{n!}{r!(n-r)!} \equiv C(n,n-r)\)</span></p>
 </section>
 </section>
 </section>
