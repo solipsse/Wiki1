@@ -26,6 +26,15 @@ in line math with \$ \<equation\> \$
 ```{math}
 :label: my-label
 w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}```
+
+\begin{equation}
+x^2 + 2x + 4
+\end{equation}
+
+$$
+x^2 + 2x + 4
+$$
+
 ```
 
 ```{math}
@@ -39,3 +48,10 @@ x^2 + 2x + 4
 $$
 x^2 + 2x + 4
 $$
+
+## Sphinx Theme
+
+Default is Book
+
+pydata-sphinx-theme\
+furo
