@@ -95,10 +95,12 @@ This is a wish list and a list of problems I encounter in hope that I will see a
 
 ## markdown, md
 
+  - [naldo's](./1/misc/markdown.md)
   - [cheatsheet1](https://www.markdownguide.org/cheat-sheet/)
   - [cheatsheet2](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) : interesting use of footnotes
   - [ultimate cheatsheet](https://github.com/lifeparticle/Markdown-Cheatsheet) : many of these is not require. md methods should suffice without html needed.
   - [table generator](https://www.tablesgenerator.com/markdown_tables)
+  - [excel to md](https://tableconvert.com/)
 
 ## LaTex
 - https://tilburgsciencehub.com/topics/research-skills/templates-dynamic-content/templates/amsmath-latex-cheatsheet/
