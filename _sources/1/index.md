@@ -18,7 +18,10 @@ Welcome to my domain...
 - Bash
 - git
 - Python
-- Latex
+- [LaTeX]
+- [JupyterBook]
+- [Markdown]
+- [HTML]
 - C++
 - Linux (How to setup linux)
 
@@ -29,3 +32,8 @@ Welcome to my domain...
 - Python
   - Matplotlib
   - Numpy
+
+[LaTeX]: ./misc/latex.md
+[JupyterBook]: ./misc/jupyter-book.md
+[Markdown]: ./misc/markdown.md
+[HTML]: ./misc/html.md

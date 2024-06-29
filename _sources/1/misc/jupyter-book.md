@@ -16,8 +16,26 @@ It uses [MathJax]
 
 [MathJax]:  https://docs.mathjax.org/en/latest/
 
+### Inline
+
 in line math with \$ \<equation\> \$
 
-<!-- \begin
-x^2
-\end  -->
+### Display/Block math
+
+```
+```{math}
+:label: my-label
+w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}```
+```
+
+```{math}
+w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}
+```
+
+\begin{equation}
+x^2 + 2x + 4
+\end{equation}
+
+$$
+x^2 + 2x + 4
+$$
