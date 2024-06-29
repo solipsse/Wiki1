@@ -2,5 +2,5 @@ jupyter-book
 matplotlib
 numpy
 sphinx-inline-tabs
-pydata-sphinx-theme
+furo
 sphinx-proof
