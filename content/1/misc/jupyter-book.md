@@ -51,7 +51,9 @@ $$
 
 ## Sphinx Theme
 
-Default is Book
+By putting these package name in the requirement.txt.
 
-pydata-sphinx-theme\
-furo
+Default is Book: current preference
+
+pydata-sphinx-theme: modern theme, aren't a fan of the header design\
+furo: great sidebar, not so good line spacing, but look great for showing code, header font too large and bold

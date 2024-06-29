@@ -2,5 +2,4 @@ jupyter-book
 matplotlib
 numpy
 sphinx-inline-tabs
-furo
 sphinx-proof
