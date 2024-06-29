@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Number Theory &#8212; Wiki Catalog</title>
+    <title>JupyterBook &#8212; Wiki Catalog</title>
   
   
   
@@ -62,7 +62,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '1/math/number-theory';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '1/misc/jupyter';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -163,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../index.html">Naldo’s Wiki</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="math.html">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/math.html">Math</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../physic/physic.html">Physic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../as-a2-cs/cs.html">AS-A2 CS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cs/cs.html">CS</a></li>
@@ -223,7 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/1/math/number-theory.ipynb" target="_blank"
+      <li><a href="../../_sources/1/misc/jupyter.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -233,7 +233,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -307,7 +307,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Number Theory</h1>
+    <h1>JupyterBook</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -317,26 +317,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-number-theory-discrete">1. Elementary Number Theory (Discrete)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#divisibility-and-primes">Divisibility and primes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcd-hcf-and-lcm">GCD/HCF and LCM</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-arithmetic">Modular arithmetic</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diophantine-equations">Diophantine equations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-functions">Arithmetic functions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quadratic-residues">Quadratic residues</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continued-fractions">Continued fractions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analytic-number-theory-continuous">2. Analytic Number Theory (Continuous)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-number-theorem">Prime number theorem</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riemann-zeta-function">Riemann zeta function</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirichlet-characters-and-l-functions">Dirichlet characters and L-functions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-forms">Modular forms</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sieve-methods">Sieve methods</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-prime-numbers">Distribution of prime numbers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additive-number-theory">Additive number theory</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a></li>
 </ul>
             </nav>
         </div>
@@ -348,61 +329,24 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <blockquote>
-<div><p><a class="reference internal" href="math.html"><span class="doc std std-doc">Main Wiki</span></a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="jupyterbook">
+<h1>JupyterBook<a class="headerlink" href="#jupyterbook" title="Permalink to this heading">#</a></h1>
+<section id="math">
+<h2>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h2>
+<p>It uses <a class="reference external" href="https://docs.mathjax.org/en/latest/">MathJax</a></p>
+<blockquote>
+<div><p>[!TIP] Use version 3
+_config.yml</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="p">:</span>
+  <span class="n">config</span><span class="p">:</span>
+    <span class="n">mathjax_path</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">cdn</span><span class="o">.</span><span class="n">jsdelivr</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">npm</span><span class="o">/</span><span class="n">mathjax</span><span class="o">@</span><span class="mi">3</span><span class="o">/</span><span class="n">es5</span><span class="o">/</span><span class="n">tex</span><span class="o">-</span><span class="n">mml</span><span class="o">-</span><span class="n">chtml</span><span class="o">.</span><span class="n">js</span>
+</pre></div>
+</div>
 </div></blockquote>
-<section class="tex2jax_ignore mathjax_ignore" id="number-theory">
-<h1>Number Theory<a class="headerlink" href="#number-theory" title="Permalink to this heading">#</a></h1>
-<section id="elementary-number-theory-discrete">
-<h2>1. Elementary Number Theory (Discrete)<a class="headerlink" href="#elementary-number-theory-discrete" title="Permalink to this heading">#</a></h2>
-<section id="divisibility-and-primes">
-<h3>Divisibility and primes<a class="headerlink" href="#divisibility-and-primes" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="gcd-hcf-and-lcm">
-<h3>GCD/HCF and LCM<a class="headerlink" href="#gcd-hcf-and-lcm" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="modular-arithmetic">
-<h3>Modular arithmetic<a class="headerlink" href="#modular-arithmetic" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="diophantine-equations">
-<h3>Diophantine equations<a class="headerlink" href="#diophantine-equations" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="arithmetic-functions">
-<h3>Arithmetic functions<a class="headerlink" href="#arithmetic-functions" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="quadratic-residues">
-<h3>Quadratic residues<a class="headerlink" href="#quadratic-residues" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="continued-fractions">
-<h3>Continued fractions<a class="headerlink" href="#continued-fractions" title="Permalink to this heading">#</a></h3>
-</section>
-</section>
-<hr class="docutils" />
-<section id="analytic-number-theory-continuous">
-<h2>2. Analytic Number Theory (Continuous)<a class="headerlink" href="#analytic-number-theory-continuous" title="Permalink to this heading">#</a></h2>
-<section id="prime-number-theorem">
-<h3>Prime number theorem<a class="headerlink" href="#prime-number-theorem" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="riemann-zeta-function">
-<h3>Riemann zeta function<a class="headerlink" href="#riemann-zeta-function" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="dirichlet-characters-and-l-functions">
-<h3>Dirichlet characters and L-functions<a class="headerlink" href="#dirichlet-characters-and-l-functions" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="modular-forms">
-<h3>Modular forms<a class="headerlink" href="#modular-forms" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="sieve-methods">
-<h3>Sieve methods<a class="headerlink" href="#sieve-methods" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="distribution-of-prime-numbers">
-<h3>Distribution of prime numbers<a class="headerlink" href="#distribution-of-prime-numbers" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="additive-number-theory">
-<h3>Additive number theory<a class="headerlink" href="#additive-number-theory" title="Permalink to this heading">#</a></h3>
-<hr class="docutils" />
-</section>
-</section>
+<p>in line math with $ &lt;equation&gt; $</p>
+<!-- \begin
+x^2
+\end  --></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -417,13 +361,13 @@ document.write(`
             mode: "python"
         },
         kernelOptions: {
-            name: "python",
-            path: "./1/math"
+            name: "python3",
+            path: "./1/misc"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -450,26 +394,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-number-theory-discrete">1. Elementary Number Theory (Discrete)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#divisibility-and-primes">Divisibility and primes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gcd-hcf-and-lcm">GCD/HCF and LCM</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-arithmetic">Modular arithmetic</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diophantine-equations">Diophantine equations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-functions">Arithmetic functions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quadratic-residues">Quadratic residues</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continued-fractions">Continued fractions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analytic-number-theory-continuous">2. Analytic Number Theory (Continuous)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-number-theorem">Prime number theorem</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riemann-zeta-function">Riemann zeta function</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirichlet-characters-and-l-functions">Dirichlet characters and L-functions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-forms">Modular forms</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sieve-methods">Sieve methods</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-prime-numbers">Distribution of prime numbers</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additive-number-theory">Additive number theory</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a></li>
 </ul>
   </nav></div>
 
