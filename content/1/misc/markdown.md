@@ -303,6 +303,125 @@ Admonition type:
 - hint
 - important
 
+code cell tag
+````
+```{code-cell} ipython3
+:tags: ["following tag name"]
+
+note = "Python syntax highlighting"
+print(note)
+```
+````
+- "full-width"
+- "scroll-output"
+- "margin"
+- "hide-input"
+- "hide-output"
+- "hide-cell"
+- "remove-input"
+- "remove-output"
+- "remove-cell"
+- "raises-exception"  
+
+```{toggle}
+This is a toggle
+
+Hidden content
+```
+
+```{admonition} Click the button to reveal!
+:class: dropdown
+Some hidden toggle content!
+```
+
+```{dropdown}
+This is a drop down
+```
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item}
+:outline:
+A
+:::
+:::{grid-item}
+:outline:
+B
+:::
+:::{grid-item}
+:outline:
+C
+:::
+:::{grid-item}
+:outline:
+D
+:::
+
+::::
+
+::::{grid}
+:gutter: 3
+
+:::{grid-item-card} One!
+Here's the first card.
+:::
+
+:::{grid-item-card} Two!
+Here's the second card.
+:::
+
+:::{grid-item-card} Three!
+Here's the third card.
+:::
+::::
+```
+A card title: The argument given to the directive.
+
+A card header: Any content that precedes a line with ^^^.
+
+A card footer: Any content that comes after a line with +++.
+
+A card body: Any content that comes in between ^^^ and +++.
+```
+
+````{card}
+Content of the top card.
+
+{bdg-primary}`example-badge`
+
+````
+
+````{card}
+
+```{button-ref} content/cards
+:class: stretched-link
+
+Clickable bottom card
+```
+
+````
+
+```{admonition} Click here!
+:class: tip, dropdown
+Here's what's inside!
+```
+
+```{note}
+:class: dropdown
+The note body will be hidden!
+```
+
+````{tab-set}
+```{tab-item} Tab 1 title
+My first tab
+```
+
+```{tab-item} Tab 2 title
+My second tab with `some code`!
+```
+````
+
 ## Reference
 
 [Cheatsheet](https://github.com/lifeparticle/Markdown-Cheatsheet/blob/main/README.md#images)

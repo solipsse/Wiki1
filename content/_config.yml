@@ -23,3 +23,7 @@ parse:
     - smartquotes
     - substitution
     - tasklist  # Additional extension
+
+html:
+  analytics:
+    google_analytics_id: G-LYW22V2HG4
