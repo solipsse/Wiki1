@@ -7,22 +7,22 @@ html[data-theme=dark] {
   --pst-color-accent-bg: #ea9a9740;
   --pst-color-info: #3e8fb0;
   --pst-color-info-bg: #3e8fb040;
-  --pst-color-danger: #e65d72; 
-  --pst-color-danger-bg: #e65d7240;
+  --pst-color-warning: #eb6f92;
+  --pst-color-warning-bg: #eb6f9240;
   --pst-color-success: #9ccfd8;
   --pst-color-success-bg: #9ccfd840;
   --pst-color-attention: var(--pst-color-warning);
   --pst-color-attention-bg: var(--pst-color-warning-bg);
-  --pst-color-danger: #d84158; 
-  --pst-color-danger-bg: #d8415840;
+  --pst-color-danger: #d62c45; 
+  --pst-color-danger-bg: #d62c4540;
   --pst-color-text-base: #e0def4;
   --pst-color-text-muted: #908caa;
   --pst-color-heading-color: #14181e;
   --pst-color-shadow: rgba(0,0,0,.2);
   --pst-color-border: #fffaf3;
   --pst-color-border-muted: #f2e9e1;
-  --pst-color-inline-code: #907aa9;
-  --pst-color-inline-code-links: #eb6f92;
+  --pst-color-inline-code: #c4a7e7;
+  --pst-color-inline-code-links: `;
   /* --pst-color-target: #f6c17780;  dont know */
   --pst-color-background: #14181e;
   --pst-color-on-background: #222832;

@@ -7,22 +7,20 @@ html[data-theme=light] {
   --pst-color-accent-bg: #d7827e40;
   --pst-color-info: #3e8fb0;
   --pst-color-info-bg: #3e8fb040;
-  --pst-color-warning: #eb6f92;
-  --pst-color-warning-bg: #eb6f9240;
+  --pst-color-warning: #b4637a;
+  --pst-color-warning-bg: #b4637a40;
   --pst-color-success: #56949f;
   --pst-color-success-bg: #56949f40;
   --pst-color-attention: var(--pst-color-warning);
   --pst-color-attention-bg: var(--pst-color-warning-bg);
-  --pst-color-warning: #eb6f92;
-  --pst-color-warning-bg: #eb6f9240;
   --pst-color-text-base: #575279;
   --pst-color-text-muted: #797593;
   --pst-color-heading-color: #575279;
   --pst-color-shadow: rgba(0,0,0,.2);
   --pst-color-border: #2a273f;
   --pst-color-border-muted: #393552;
-  --pst-color-inline-code: #c4a7e7;
-  --pst-color-inline-code-links: #eb6f92;
+  --pst-color-inline-code: #907aa9;
+  --pst-color-inline-code-links: #b4637a;
   /* --pst-color-target: #f6c17780;  dont know */
   --pst-color-background: #faf4ed;
   --pst-color-on-background: #fffafa;
