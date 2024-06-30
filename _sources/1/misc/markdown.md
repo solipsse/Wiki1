@@ -424,7 +424,7 @@ My second tab with `some code`!
 ```
 ````
 
-sphinx inline tab extension   
+sphinx inline tab extension:  
 
 ````{tab} Python
 ```python
@@ -432,12 +432,15 @@ def main():
     return
 ```
 ````
+
 ````{tab} C++
 ```c++
 int main(const int argc, const char **argv) {
   return 0;
 }
 ```
+
+Isn't it cool
 
 ## Reference
 

@@ -63,8 +63,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}", 0], "emat": ["\\end{array}\\right]", 0]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/math/combinatorics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -387,7 +385,7 @@ document.write(`
   <blockquote>
 <div><p><a class="reference internal" href="math.html"><span class="doc std std-doc">Main Wiki</span></a></p>
 </div></blockquote>
-<section class="tex2jax_ignore mathjax_ignore" id="combinatorics">
+<section id="combinatorics">
 <h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this heading">#</a></h1>
 <p>Following the upcoming principles to be discussed will ease our counting that we can find the method to take immediately. We will borrow some logics as well so learn that first!</p>
 <section id="preliminary-consideration">
@@ -395,7 +393,7 @@ document.write(`
 <section id="restriction-repeatability-and-distinguishaibilit">
 <h3>Restriction, Repeatability and Distinguishaibilit<a class="headerlink" href="#restriction-repeatability-and-distinguishaibilit" title="Permalink to this heading">#</a></h3>
 <p><strong>Restriction</strong> are condition that our counting must satisfy. This reduce the total possible outcomes. It can be count using constructive and complementary approach or by case.</p>
-<p>Objects are consider to be <strong>repeatable</strong> if they can be reused or replaced. E.g. a binary number with n bit has <span class="math notranslate nohighlight">\(2^n\)</span> total possibility because each one can be 0 or 1, and using 1 doesn’t mean it can’t use 1 again. <span class="math notranslate nohighlight">\(\overline{replace} = \Delta {(possible \land total)} = \Delta {probability}\)</span></p>
+<p>Objects are consider to be <strong>repeatable</strong> if they can be reused or replaced. E.g. a binary number with n bit has $2^n$ total possibility because each one can be 0 or 1, and using 1 doesn’t mean it can’t use 1 again. $\overline{replace} = \Delta {(possible \land total)} = \Delta {probability}$</p>
 <p><strong>Distinguishable</strong> objects are unique, such as distinct people, distinct solutions, and distinct sets of things. In combination, we see that set of objects are indistinguishable.</p>
 <p>Refer to <a class="reference internal" href="notation.html"><span class="doc std std-doc">Notation</span></a> to understand how we will generalise solving each counting problems.</p>
 <p>We will use these three consideration points to find a way to tackle with enumeration problems.</p>
@@ -411,21 +409,21 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Logic</p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(A+B\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(AB\)</span> (A and then B)</p></td>
+<td class="text-center"><p>$A+B$</p></td>
+<td class="text-center"><p>$AB$ (A and then B)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Total</p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(|A| + |B|\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(|A|\times|B|\)</span></p></td>
+<td class="text-center"><p>$|A| + |B|$</p></td>
+<td class="text-center"><p>$|A|\times|B|$</p></td>
 </tr>
 </tbody>
 </table>
-<p>In general, <span class="math notranslate nohighlight">\(add\)</span> when we need to pick one OR another but not simultaneously, and <span class="math notranslate nohighlight">\(multiply\)</span> when <span class="math notranslate nohighlight">\(\overline{add}\)</span>, i.e. pick one AND another simultaneously.</p>
+<p>In general, $add$ when we need to pick one OR another but not simultaneously, and $multiply$ when $\overline{add}$, i.e. pick one AND another simultaneously.</p>
 <p><strong>Casework</strong> is a counting techniques that utilise rules of sum. We looks at all the conditions that match the OR logic and splits them into cases. This can be daunting; having many cases in exam may be a sign that we need to find a smarter way of thinking. For example, complementary counting.</p>
 </section>
 <section id="inclusion-exclusion-principles">
 <h3>Inclusion-Exclusion Principles<a class="headerlink" href="#inclusion-exclusion-principles" title="Permalink to this heading">#</a></h3>
-<p>This rules ensure that we count everything once only by adding things more than once <span class="math notranslate nohighlight">\(\to\)</span> account for the overcount by substracting or even dividing.</p>
+<p>This rules ensure that we count everything once only by adding things more than once $\to$ account for the overcount by substracting or even dividing.</p>
 <section id="overcounting">
 <h4>Overcounting<a class="headerlink" href="#overcounting" title="Permalink to this heading">#</a></h4>
 <p>We usually overcount things because it is easier to count all case then divide by repeated amount.</p>
@@ -434,7 +432,7 @@ document.write(`
 <section id="complementary-counting">
 <h3>Complementary Counting<a class="headerlink" href="#complementary-counting" title="Permalink to this heading">#</a></h3>
 <p>If there are many case it might be better to count the opposite and do<br />
-<span class="math notranslate nohighlight">\(\text{Total} - \text{Invalid}\)</span></p>
+$\text{Total} - \text{Invalid}$</p>
 </section>
 <section id="connstructive-counting">
 <h3>Connstructive Counting<a class="headerlink" href="#connstructive-counting" title="Permalink to this heading">#</a></h3>
@@ -443,36 +441,33 @@ document.write(`
 </section>
 <section id="arrangement">
 <h2>Arrangement<a class="headerlink" href="#arrangement" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[_{A}|WORD| =\underline{4}\hspace{.5ex}\underline{3}\hspace{.5ex}\underline{2}\hspace{.5ex}\underline{1}=4!\hspace{10ex} \bar{R}\bar{R}D\]</div>
+<p>$$_{A}|WORD| =\underline{4}\hspace{.5ex}\underline{3}\hspace{.5ex}\underline{2}\hspace{.5ex}\underline{1}=4!\hspace{10ex} \bar{R}\bar{R}D$$</p>
 <p>Looking at the number of characters to place in 4 spaces, we can put 4, then 3, then 2 and then 1. {Rule of product}</p>
 <section id="choosing-from-n-things-to-put-into-r-places">
 <h3>Choosing from n things to put into r places<a class="headerlink" href="#choosing-from-n-things-to-put-into-r-places" title="Permalink to this heading">#</a></h3>
 <section id="permutation">
 <h4>Permutation<a class="headerlink" href="#permutation" title="Permalink to this heading">#</a></h4>
 <p>The arrangement above can be seen as a speacial permutation P(4,4) = 4!</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{align*}
-_A|3\text{ books}, 5\text{ books}| &amp;= \underline{5}\hspace{.5ex}\underline{4}\hspace{.5ex}\underline{3}\hspace{10ex} \bar{R}\bar{R}D\\
-&amp;= \frac{5!}{2!}\\
+<p>$$\begin{align*}
+_A|3\text{ books}, 5\text{ books}| &amp;= \underline{5}\hspace{.5ex}\underline{4}\hspace{.5ex}\underline{3}\hspace{10ex} \bar{R}\bar{R}D\
+&amp;= \frac{5!}{2!}\
 &amp;=P(5,3)
-\end{align*}\end{split}\]</div>
+\end{align*}$$</p>
 <p>Permutation can be thought purely with law of product, but if we can generalise then we will do work faster.</p>
-<p><span class="math notranslate nohighlight">\(P(n,r)\equiv n^{\underline{r}} \equiv \frac{n!}{(n-r)!}\)</span></p>
+<p>$P(n,r)\equiv n^{\underline{r}} \equiv \frac{n!}{(n-r)!}$</p>
 </section>
 <section id="combination">
 <h4>Combination<a class="headerlink" href="#combination" title="Permalink to this heading">#</a></h4>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{align*}
-_{A}|AABBB| &amp;= _A|2 \text{ A's}, 5\text{ Letter}|\hspace{10ex} \bar{R}\bar{R}\bar{D} \{X\}\\
-&amp;= \frac{_{A}|A_1A_2B_1B_2B_3|}{_{A}|A_1A_2| \text{ and }_{A}|B_1B_2B_3|}\\
-&amp;=\frac{5!}{2!3!}\hspace{10ex} \bar{R}\bar{R}D\\
+<p>$$\begin{align*}
+<em>{A}|AABBB| &amp;= <em>A|2 \text{ A’s}, 5\text{ Letter}|\hspace{10ex} \bar{R}\bar{R}\bar{D} {X}\
+&amp;= \frac{</em>{A}|A_1A_2B_1B_2B_3|}{</em>{A}|A_1A_2| \text{ and }_{A}|B_1B_2B_3|}\
+&amp;=\frac{5!}{2!3!}\hspace{10ex} \bar{R}\bar{R}D\
 &amp;=C(5,2) \equiv C(5,3)
-\end{align*}\end{split}\]</div>
+\end{align*}$$</p>
 <p>We can use law of product by assuming A and B are distinct and then divide to account for overcounting as each combination of A’s and B’s will be repeated by the amount of possible combinations A’s and B’s.</p>
-<p>For 5 place we choose 2 A <span class="math notranslate nohighlight">\(\to\)</span> fill what left with B (1 way becuase all B are <span class="math notranslate nohighlight">\(\bar{D}\)</span>) or<br />
-For 5 place we choose 3 B <span class="math notranslate nohighlight">\(\to\)</span> fill what left with A (1 way becuase all A are <span class="math notranslate nohighlight">\(\bar{D}\)</span>)</p>
-<p><span class="math notranslate nohighlight">\(C(n,r) \equiv \frac{n^{\underline{r}}}{r!}\equiv \frac{n!}{r!(n-r)!} \equiv C(n,n-r)\)</span></p>
+<p>For 5 place we choose 2 A $\to$ fill what left with B (1 way becuase all B are $\bar{D}$) or<br />
+For 5 place we choose 3 B $\to$ fill what left with A (1 way becuase all A are $\bar{D}$)</p>
+<p>$C(n,r) \equiv \frac{n^{\underline{r}}}{r!}\equiv \frac{n!}{r!(n-r)!} \equiv C(n,n-r)$</p>
 </section>
 </section>
 </section>
