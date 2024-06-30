@@ -1,5 +1,4 @@
 jupyter-book
-myst-parser
 matplotlib
 numpy
 sphinx-inline-tabs
