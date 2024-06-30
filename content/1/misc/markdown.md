@@ -1,5 +1,5 @@
 # MD Cheatsheet
-These are summaries I come accross from cheatsheets, which I have reference.
+These are summaries I come accross from cheatsheets, which I have reference. MyST is also included
 
 ## Heading
 
@@ -133,7 +133,58 @@ Only with HTML
 | 1 | 2 | 3 |
 
 </td><td>
-And so on...</td></tr> </table>
+And so on...</td></tr> </table> 
+
+```{list-table}
+:header-rows: 1
+
+* - Col1
+  - Col2
+* - Row2 under Col1
+  - Row2 under Col2
+* - Row3 under Col1
+  - Row3 under Col2
+```
+
+## Math
+````
+Inline $ <equation> $
+block
+$$
+equation
+$$ (mylabel)
+
+same as 
+
+``` {math}
+:label: eqlabel
+<equation>
+```
+
+since I include amsmath, we can use
+\begin{equation}
+\end{equation}
+...as well
+
+````
+Inline $ <equation> $
+block
+$$
+equation
+$$ (mylabel)
+
+``` {math}
+:label: eqlabel
+<equation>
+```
+
+since I include amsmath, we can use
+\begin{equation}
+<equation>
+\end{equation}
+...as well
+
+I can reference {eq}`mylabel` and {eq}`eqlabel`
 
 ## Links and Images
 
@@ -155,7 +206,22 @@ Images
 [1]: url or file-path
 [reference-link]: url
 ```
+  
+````
+```{figure} ./path/to/figure.jpg
+:name: image-1 
+:height: 120px
 
+caption
+```
+
+```{image} ./path/to/image.jpg
+:height: 150px
+:name: figure-example
+
+Here is my figure caption!
+```
+````
 ## Footnotes
 
 ```md
@@ -212,6 +278,30 @@ pie
 Horizontal Rule
 ---
 ```
+
+## MyST Syntax
+
+````
+
+```{admonition} Title
+:class: <name> (may or may not be use)
+
+Text
+
+```
+````
+
+Admonition type:
+
+- tip
+- note
+- warning
+- caution 
+- attention
+- danger
+- error
+- hint
+- important
 
 ## Reference
 

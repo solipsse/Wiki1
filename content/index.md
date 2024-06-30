@@ -11,6 +11,20 @@ This project was started due to a small intrinsic motivation to create complete 
 
 ![](./1/data/wiki-explain.svg)
 
+````{admonition} Markdown Style
+:class: Note
+
+There are two types of markdown to be concern
+1. CommonMark
+2. MyST
+
+In our wiki, since we are using jupyter book, make sure to learn some of the MyST which will make our page looks cleaner.
+
+```{warning}
+MyST are not suppose to be render properly in GitHub, and vscode. Install the [extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight).
+```
+````
+
 ## The directory, branch and files
 
 ### What is ./content
@@ -75,6 +89,7 @@ Any recommendation with the documentation is appreciated.
 
 This is a wish list and a list of problems I encounter in hope that I will see and remember and somehow find solution.
 
+- Learning all sphinx, myst and jupyter notebook usage.
 - Creating diagram through excalidraw: I am thinking of creating a python library that can create excalidraw diagram through function. The current solution to use excalidraw extension on VS Code or the website to create diagram.
 - Theming the Jupyter Book website with css. [Target Colorscheme](https://rosepinetheme.com/palette/) [Target Font](https://www.jetbrains.com/lp/mono/) (considering it needs to have math symbols and font ligature)
 - Implement a way for people to change the fonts.
