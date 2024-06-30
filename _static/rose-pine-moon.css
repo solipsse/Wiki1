@@ -1,4 +1,4 @@
-html[data-theme=light] {
+html[data-theme=dark] {
   --pst-color-primary: #9ccfd8;
   --pst-color-secondary: #f6c177CD;
   --pst-color-primary-bg: #d0ecf1;
@@ -21,14 +21,14 @@ html[data-theme=light] {
   --pst-color-shadow: rgba(0,0,0,.2);
   --pst-color-border: #fffaf3;
   --pst-color-border-muted: #f2e9e1;
-  --pst-color-inline-code: #c4a7e7;
+  --pst-color-inline-code: #907aa9;
   --pst-color-inline-code-links: #eb6f92;
   /* --pst-color-target: #f6c17780;  dont know */
-  --pst-color-background: #faf4ed;
-  --pst-color-on-background: #fffafa;
-  --pst-color-surface: #fffafa; 
-  --pst-color-on-surface: #fffafa;
+  --pst-color-background: #14181e;
+  --pst-color-on-background: #222832;
+  --pst-color-surface: #29313d; 
+  --pst-color-on-surface: #f3f4f5;
   --pst-color-link: #ea9a97;
   --pst-color-link-hover: #eb6f92;
-  color-scheme: light;
+  color-scheme: dark;
 }
