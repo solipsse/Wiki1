@@ -3,18 +3,20 @@
 ## Math
 
 It uses [MathJax]
+[GoodDocument]
 
-> [!TIP] Use version 3 
-> _config.yml 
-> ```
-> sphinx:
->   config:
->     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-> ```
-
-
-
-[MathJax]:  https://docs.mathjax.org/en/latest/
+````{tip}
+Use version 3 
+_config.yml 
+```
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+```
+````
+This is an example of
++++ {"meta": "data"}
+a block break
 
 ### Inline
 
@@ -57,3 +59,6 @@ Default is Book: current preference
 
 pydata-sphinx-theme: modern theme, aren't a fan of the header design\
 furo: great sidebar, not so good line spacing, but look great for showing code, header font too large and bold
+
+[MathJax]:  https://docs.mathjax.org/en/latest/
+[GoodDocument]: https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#syntax-math

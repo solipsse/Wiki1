@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/misc/markdown';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -321,12 +323,14 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-style">Text Style</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alignment">Alignment</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links-and-images">Links and Images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-list">Numbered List</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#button">Button</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram">Diagram</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misc">Misc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-syntax">MyST Syntax</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
 </ul>
             </nav>
@@ -341,7 +345,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="md-cheatsheet">
 <h1>MD Cheatsheet<a class="headerlink" href="#md-cheatsheet" title="Permalink to this heading">#</a></h1>
-<p>These are summaries I come accross from cheatsheets, which I have reference.</p>
+<p>These are summaries I come accross from cheatsheets, which I have reference. MyST is also included</p>
 <section id="heading">
 <h2>Heading<a class="headerlink" href="#heading" title="Permalink to this heading">#</a></h2>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># Heading 1 </span>
@@ -518,7 +522,59 @@ Different Quote Style
 </tbody>
 </table>
 </td><td>
-And so on...</td></tr> </table>
+And so on...</td></tr> </table> 
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Col1</p></th>
+<th class="head"><p>Col2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Row2 under Col1</p></td>
+<td><p>Row2 under Col2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Row3 under Col1</p></td>
+<td><p>Row3 under Col2</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="math">
+<h2>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Inline $ &lt;equation&gt; $
+block
+$$
+equation
+$$ (mylabel)
+
+same as 
+
+``` {math}
+:label: eqlabel
+&lt;equation&gt;
+```
+
+since I include amsmath, we can use
+\begin{equation}
+\end{equation}
+...as well
+
+</pre></div>
+</div>
+<p>Inline <span class="math notranslate nohighlight">\( &lt;equation&gt; \)</span>
+block
+$<span class="math notranslate nohighlight">\(
+equation
+\)</span>$ (mylabel)</p>
+<div class="math notranslate nohighlight" id="equation-eqlabel">
+<span class="eqno">()<a class="headerlink" href="#equation-eqlabel" title="Permalink to this equation">#</a></span>\[&lt;equation&gt;\]</div>
+<p>since I include amsmath, we can use</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a0a5ea69-8886-401d-b7c2-d2f143c7ebbb">
+<span class="eqno">()<a class="headerlink" href="#equation-a0a5ea69-8886-401d-b7c2-d2f143c7ebbb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+&lt;equation&gt;
+\end{equation}\]</div>
+<p>…as well</p>
+<p>I can reference <code class="xref eq docutils literal notranslate"><span class="pre">mylabel</span></code> and <a class="reference internal" href="#equation-eqlabel">()</a></p>
 </section>
 <section id="links-and-images">
 <h2>Links and Images<a class="headerlink" href="#links-and-images" title="Permalink to this heading">#</a></h2>
@@ -537,6 +593,21 @@ Images
 [<span class="nl">reference text</span>]: <span class="na">url</span>
 [<span class="nl">1</span>]: <span class="na">url or file-path</span>
 [<span class="nl">reference-link</span>]: <span class="na">url</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} ./path/to/figure.jpg
+:name: image-1 
+:height: 120px
+
+caption
+```
+
+```{image} ./path/to/image.jpg
+:height: 150px
+:name: figure-example
+
+Here is my figure caption!
+```
 </pre></div>
 </div>
 </section>
@@ -599,6 +670,30 @@ Another line
 </pre></div>
 </div>
 </section>
+<section id="myst-syntax">
+<h2>MyST Syntax<a class="headerlink" href="#myst-syntax" title="Permalink to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+```{admonition} Title
+:class: &lt;name&gt; (may or may not be use)
+
+Text
+
+```
+</pre></div>
+</div>
+<p>Admonition type:</p>
+<ul class="simple">
+<li><p>tip</p></li>
+<li><p>note</p></li>
+<li><p>warning</p></li>
+<li><p>caution</p></li>
+<li><p>attention</p></li>
+<li><p>danger</p></li>
+<li><p>error</p></li>
+<li><p>hint</p></li>
+<li><p>important</p></li>
+</ul>
+</section>
 <section id="reference">
 <h2>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://github.com/lifeparticle/Markdown-Cheatsheet/blob/main/README.md#images">Cheatsheet</a></p>
@@ -654,12 +749,14 @@ Another line
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-style">Text Style</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alignment">Alignment</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links-and-images">Links and Images</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbered-list">Numbered List</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#button">Button</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram">Diagram</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misc">Misc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-syntax">MyST Syntax</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
 </ul>
   </nav></div>
