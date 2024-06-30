@@ -30,12 +30,6 @@ html[data-theme=dark] {
   --pst-color-on-surface: #f3f4f5;
   --pst-color-link: #ea9a97;
   --pst-color-link-hover: #eb6f92;
-  color-scheme: dark;
-}
-
-:root {
   --bs-border-color: #484364;
-}
-.table{
-  --bs-table-border-color: #484364;
+  color-scheme: dark;
 }

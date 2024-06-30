@@ -28,13 +28,6 @@ html[data-theme=light] {
   --pst-color-on-surface: #fffafa;
   --pst-color-link: #d7827e;
   --pst-color-link-hover: #b4637a;
-  color-scheme: light;
-}
-
-:root {
   --bs-border-color: #cecacd;
-}
-
-.table{
-  --bs-table-border-color: #cecacd;
+  color-scheme: light;
 }
