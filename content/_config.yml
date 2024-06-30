@@ -21,15 +21,19 @@ parse:
     # including those that are enabled by default!
     - amsmath
     - dollarmath
+    - attrs_inline
     - colon_fence
     - deflist
     - html_admonition
     - html_image
     - linkify
+    - fieldlist
     - replacements
     - smartquotes
     - substitution
+    - strikethrough
     - tasklist  # Additional extension
+
 html:
   analytics:
     google_analytics_id: G-LYW22V2HG4
