@@ -12,17 +12,16 @@ parse:
   myst_enable_extensions:
     - amsmath
     - dollarmath
-    - attrs_inline
-    - colon_fence
-    - deflist
     - html_admonition
+    - deflist
+    - colon_fence
     - html_image
     - linkify
     - fieldlist
     - replacements
-    - smartquotes
     - substitution
     - strikethrough
+    - attrs_inline
     - tasklist  # Additional extension
 html:
   analytics:
