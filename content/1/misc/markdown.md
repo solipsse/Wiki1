@@ -338,43 +338,44 @@ Some hidden toggle content!
 This is a drop down
 ```
 
-::::{grid}
+````{grid}
 :gutter: 2
 
-:::{grid-item}
+```{grid-item}
 :outline:
 A
-:::
-:::{grid-item}
+```
+```{grid-item}
 :outline:
 B
-:::
-:::{grid-item}
+```
+```{grid-item}
 :outline:
 C
-:::
-:::{grid-item}
+```
+```{grid-item}
 :outline:
 D
-:::
+```
 
-::::
+````
 
-::::{grid}
+````{grid}
 :gutter: 3
 
-:::{grid-item-card} One!
+```{grid-item-card} One!
 Here's the first card.
-:::
+```
 
-:::{grid-item-card} Two!
+```{grid-item-card} Two!
 Here's the second card.
-:::
+```
 
-:::{grid-item-card} Three!
+```{grid-item-card} Three!
 Here's the third card.
-:::
-::::
+```
+````
+
 ```
 A card title: The argument given to the directive.
 
