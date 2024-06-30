@@ -5,8 +5,8 @@ sphinx:
   extra_extension:
     - sphinx_inline_tabs
     - sphinx_proof
-  config:
-    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # config:
+    # mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     # html_theme: furo
 parse:
   myst_enable_extensions:
