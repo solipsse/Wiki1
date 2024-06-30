@@ -151,7 +151,6 @@ And so on...</td></tr> </table>
 Inline $ <equation> $
 block
 $$
-equation
 $$ (mylabel)
 
 same as 
@@ -167,20 +166,22 @@ since I include amsmath, we can use
 ...as well
 
 ````
-Inline $ <equation> $
+Inline $x^2 + x =4$
 block
 $$
-equation
+x^2 + x =4
+
 $$ (mylabel)
 
 ``` {math}
 :label: eqlabel
-<equation>
+x^2 + x =4
+
 ```
 
 since I include amsmath, we can use
 \begin{equation}
-<equation>
+x^2 + x =4
 \end{equation}
 ...as well
 
