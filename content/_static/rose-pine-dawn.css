@@ -17,8 +17,8 @@ html[data-theme=light] {
   --pst-color-text-muted: #797593;
   --pst-color-heading-color: #575279;
   --pst-color-shadow: rgba(0,0,0,.2);
-  --pst-color-border: #2a273f;
-  --pst-color-border-muted: #393552;
+  --pst-color-border: #fffaf3;
+  --pst-color-border-muted: #f2e9e1;
   --pst-color-inline-code: #907aa9;
   --pst-color-inline-code-links: #b4637a;
   /* --pst-color-target: #f6c17780;  dont know */
