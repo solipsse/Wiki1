@@ -412,6 +412,8 @@ Here's what's inside!
 The note body will be hidden!
 ```
 
+Myst tab with normal sphinx design
+
 ````{tab-set}
 ```{tab-item} Tab 1 title
 My first tab
@@ -421,6 +423,21 @@ My first tab
 My second tab with `some code`!
 ```
 ````
+
+sphinx inline tab extension   
+
+````{tab} Python
+```python
+def main():
+    return
+```
+````
+````{tab} C++
+```c++
+int main(const int argc, const char **argv) {
+  return 0;
+}
+```
 
 ## Reference
 
