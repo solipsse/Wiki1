@@ -344,7 +344,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="md-cheatsheet">
+  <section class="tex2jax_ignore mathjax_ignore" id="md-cheatsheet">
 <h1>MD Cheatsheet<a class="headerlink" href="#md-cheatsheet" title="Permalink to this heading">#</a></h1>
 <p>These are summaries I come accross from cheatsheets, which I have reference. MyST is also included</p>
 <section id="heading">
@@ -561,19 +561,21 @@ since I include amsmath, we can use
 
 </pre></div>
 </div>
-<p>Inline $x^2 + x =4$
+<p>Inline <span class="math notranslate nohighlight">\(x^2 + x =4\)</span>
 block
 $$
 x^2 + x =4</p>
-<p>$$ (mylabel)</p>
+<div class="math notranslate nohighlight" id="equation-mylabel">
+<span class="eqno">()<a class="headerlink" href="#equation-mylabel" title="Permalink to this equation">#</a></span>\[\]</div>
 <div class="math notranslate nohighlight" id="equation-eqlabel">
 <span class="eqno">()<a class="headerlink" href="#equation-eqlabel" title="Permalink to this equation">#</a></span>\[x^2 + x =4\]</div>
-<p>since I include amsmath, we can use
-\begin{equation}
+<p>since I include amsmath, we can use</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b1e7ff05-923e-405f-a08a-292fe583d22f">
+<span class="eqno">()<a class="headerlink" href="#equation-b1e7ff05-923e-405f-a08a-292fe583d22f" title="Permalink to this equation">#</a></span>\[\begin{equation}
 x^2 + x =4
-\end{equation}
-…as well</p>
-<p>I can reference <code class="xref eq docutils literal notranslate"><span class="pre">mylabel</span></code> and <a class="reference internal" href="#equation-eqlabel">()</a></p>
+\end{equation}\]</div>
+<p>…as well</p>
+<p>I can reference <a class="reference internal" href="#equation-mylabel">()</a> and <a class="reference internal" href="#equation-eqlabel">()</a></p>
 </section>
 <section id="links-and-images">
 <h2>Links and Images<a class="headerlink" href="#links-and-images" title="Permalink to this heading">#</a></h2>
