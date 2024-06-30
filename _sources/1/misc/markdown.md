@@ -407,10 +407,10 @@ Clickable bottom card
 Here's what's inside!
 ```
 
-```{note}
+:::{note}
 :class: dropdown
 The note body will be hidden!
-```
+:::
 
 Myst tab with normal sphinx design
 
