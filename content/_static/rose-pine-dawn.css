@@ -31,3 +31,6 @@ html[data-theme=light] {
   --bs-border-color: #cecacd;
   color-scheme: light;
 }
+footer.bd-footer-content {
+  border-top: 1px solid var(--bs-border-color);
+}
