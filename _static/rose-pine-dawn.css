@@ -1,6 +1,6 @@
 html[data-theme=light] {
   --pst-color-primary: #56949f;
-  --pst-color-secondary: #ea9d34CD;
+  --pst-color-secondary: #9d7baecd;
   /* --pst-color-primary-bg: #232136;
   --pst-color-secondary-bg: #2a273f; */
   --pst-color-accent: #d7827e;
@@ -29,6 +29,10 @@ html[data-theme=light] {
   --pst-color-link: #d7827e;
   --pst-color-link-hover: #b4637a;
   color-scheme: light;
+}
+
+:root {
+  --bs-border-color: #cecacd;
 }
 
 .table{
