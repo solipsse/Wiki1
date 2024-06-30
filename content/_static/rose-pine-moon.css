@@ -1,8 +1,8 @@
 html[data-theme=dark] {
   --pst-color-primary: #9ccfd8;
   --pst-color-secondary: #f6c177CD;
-  --pst-color-primary-bg: #d0ecf1;
-  --pst-color-secondary-bg: #e0c7ff;
+  /* --pst-color-primary-bg: #d0ecf1;
+  --pst-color-secondary-bg: #e0c7ff; */
   --pst-color-accent: #ea9a97;
   --pst-color-accent-bg: #ea9a9740;
   --pst-color-info: #3e8fb0;
