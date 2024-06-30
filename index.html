@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/theme.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -62,7 +63,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}", 0], "emat": ["\\end{array}\\right]", 0]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -340,7 +341,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#current-struggle">Current struggle</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">Latex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborator-maintainer-and-creator">Collaborator, Maintainer and Creator</a></li>
@@ -460,11 +461,15 @@ What topic/subject do you want to edit/make? (you can make new wiki)</p>
 <ul class="simple">
 <li><p>Learning all sphinx, myst and jupyter notebook usage.</p></li>
 <li><p>Creating diagram through excalidraw: I am thinking of creating a python library that can create excalidraw diagram through function. The current solution to use excalidraw extension on VS Code or the website to create diagram.</p></li>
-<li><p>Theming the Jupyter Book website with css. <a class="reference external" href="https://rosepinetheme.com/palette/">Target Colorscheme</a> <a class="reference external" href="https://www.jetbrains.com/lp/mono/">Target Font</a> (considering it needs to have math symbols and font ligature)</p></li>
+<li><p>Sphinx Advanced Customisation is needed to do the above</p>
+<ul>
+<li><p>Theming the Jupyter Book website with css. <a class="reference external" href="https://rosepinetheme.com/palette/">Target  Colorscheme</a> <a class="reference external" href="https://www.jetbrains.com/lp/mono/">Target Font</a> (considering it needs to have math symbols and font ligature)</p></li>
 <li><p>Implement a way for people to change the fonts.</p></li>
 </ul>
+</li>
+</ul>
 <section id="latex">
-<h2>Latex<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
+<h2>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>\underbar can’t be use, use \underline instead.</p></li>
 </ul>
@@ -484,9 +489,6 @@ What topic/subject do you want to edit/make? (you can make new wiki)</p>
 <h2>markdown, md<a class="headerlink" href="#markdown-md" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="1/misc/markdown.html"><span class="doc std std-doc">naldo’s</span></a></p></li>
-<li><p><a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">cheatsheet1</a></p></li>
-<li><p><a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet2</a> : interesting use of footnotes</p></li>
-<li><p><a class="reference external" href="https://github.com/lifeparticle/Markdown-Cheatsheet">ultimate cheatsheet</a> : many of these is not require. md methods should suffice without html needed.</p></li>
 <li><p><a class="reference external" href="https://www.tablesgenerator.com/markdown_tables">table generator</a></p></li>
 <li><p><a class="reference external" href="https://tableconvert.com/">excel to md</a></p></li>
 </ul>
@@ -589,7 +591,7 @@ What topic/subject do you want to edit/make? (you can make new wiki)</p>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#current-struggle">Current struggle</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">Latex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborator-maintainer-and-creator">Collaborator, Maintainer and Creator</a></li>

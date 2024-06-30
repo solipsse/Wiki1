@@ -91,10 +91,11 @@ This is a wish list and a list of problems I encounter in hope that I will see a
 
 - Learning all sphinx, myst and jupyter notebook usage.
 - Creating diagram through excalidraw: I am thinking of creating a python library that can create excalidraw diagram through function. The current solution to use excalidraw extension on VS Code or the website to create diagram.
-- Theming the Jupyter Book website with css. [Target Colorscheme](https://rosepinetheme.com/palette/) [Target Font](https://www.jetbrains.com/lp/mono/) (considering it needs to have math symbols and font ligature)
-- Implement a way for people to change the fonts.
+- Sphinx Advanced Customisation is needed to do the above
+  - Theming the Jupyter Book website with css. [Target  Colorscheme](https://rosepinetheme.com/palette/) [Target Font](https://www.jetbrains.com/lp/mono/) (considering it needs to have math symbols and font ligature)
+  - Implement a way for people to change the fonts.
 
-## Latex
+## LaTeX
 
 - \underbar can't be use, use \underline instead.
 
@@ -111,9 +112,6 @@ This is a wish list and a list of problems I encounter in hope that I will see a
 ## markdown, md
 
   - [naldo's](./1/misc/markdown.md)
-  - [cheatsheet1](https://www.markdownguide.org/cheat-sheet/)
-  - [cheatsheet2](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) : interesting use of footnotes
-  - [ultimate cheatsheet](https://github.com/lifeparticle/Markdown-Cheatsheet) : many of these is not require. md methods should suffice without html needed.
   - [table generator](https://www.tablesgenerator.com/markdown_tables)
   - [excel to md](https://tableconvert.com/)
 

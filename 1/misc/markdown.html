@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -62,7 +63,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}", 0], "emat": ["\\end{array}\\right]", 0]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '1/misc/markdown';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -331,7 +332,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram">Diagram</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misc">Misc</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-syntax">MyST Syntax</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
 </ul>
             </nav>
         </div>
@@ -569,8 +569,8 @@ equation
 <div class="math notranslate nohighlight" id="equation-eqlabel">
 <span class="eqno">()<a class="headerlink" href="#equation-eqlabel" title="Permalink to this equation">#</a></span>\[&lt;equation&gt;\]</div>
 <p>since I include amsmath, we can use</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d8a169cc-d4b0-4a1f-86f3-fcfe34d95dd9">
-<span class="eqno">()<a class="headerlink" href="#equation-d8a169cc-d4b0-4a1f-86f3-fcfe34d95dd9" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-01ef5994-cbbd-42a8-b592-9741a3c810c3">
+<span class="eqno">()<a class="headerlink" href="#equation-01ef5994-cbbd-42a8-b592-9741a3c810c3" title="Permalink to this equation">#</a></span>\[\begin{equation}
 &lt;equation&gt;
 \end{equation}\]</div>
 <p>…as well</p>
@@ -806,6 +806,7 @@ Three!</div>
 <p class="admonition-title">Note</p>
 <p>The note body will be hidden!</p>
 </div>
+<p>Myst tab with normal sphinx design</p>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
@@ -818,10 +819,7 @@ Tab 2 title</label><div class="sd-tab-content docutils">
 <p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
 </div>
 </div>
-</section>
-<section id="reference">
-<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://github.com/lifeparticle/Markdown-Cheatsheet/blob/main/README.md#images">Cheatsheet</a></p>
+<p>sphinx inline tab extension</p>
 </section>
 </section>
 
@@ -882,7 +880,6 @@ Tab 2 title</label><div class="sd-tab-content docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram">Diagram</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misc">Misc</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-syntax">MyST Syntax</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
 </ul>
   </nav></div>
 
