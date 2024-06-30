@@ -322,12 +322,11 @@ print(note)
 - "remove-output"
 - "remove-cell"
 - "raises-exception"  
-
-```{toggle}
+:::{toggle}
 This is a toggle
 
 Hidden content
-```
+:::
 
 ```{admonition} Click the button to reveal!
 :class: dropdown

@@ -11,7 +11,7 @@ This project was started due to a small intrinsic motivation to create complete 
 
 ![](./1/data/wiki-explain.svg)
 
-::::{admonition} Markdown Style
+````{admonition} Markdown Style
 :class: Note
 
 There are two types of markdown to be concern
@@ -20,10 +20,10 @@ There are two types of markdown to be concern
 
 In our wiki, since we are using jupyter book, make sure to learn some of the MyST which will make our page looks cleaner.
 
-:::{warning}
+```{warning}
 MyST are not suppose to be render properly in GitHub, and vscode. Install the [extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight).
-:::
-::::
+```
+````
 
 ## The directory, branch and files
 
