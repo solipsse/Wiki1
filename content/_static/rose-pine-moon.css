@@ -19,8 +19,8 @@ html[data-theme=dark] {
   --pst-color-text-muted: #908caa;
   --pst-color-heading-color: #14181e;
   --pst-color-shadow: rgba(0,0,0,.2);
-  --pst-color-border: #2a273f;
-  --pst-color-border-muted: #393552;
+  --pst-color-border: #393552;
+  --pst-color-border-muted: #2a273f;
   --pst-color-inline-code: #c4a7e7;
   --pst-color-inline-code-links: `;
   /* --pst-color-target: #f6c17780;  dont know */
@@ -31,4 +31,8 @@ html[data-theme=dark] {
   --pst-color-link: #ea9a97;
   --pst-color-link-hover: #eb6f92;
   color-scheme: dark;
+}
+
+.table{
+  --bs-table-border-color: #484364;
 }

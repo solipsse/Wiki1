@@ -30,3 +30,7 @@ html[data-theme=light] {
   --pst-color-link-hover: #b4637a;
   color-scheme: light;
 }
+
+.table{
+  --bs-table-border-color: #cecacd;
+}
