@@ -17,8 +17,6 @@ sphinx:
     # html_theme: furo
 parse:
   myst_enable_extensions:
-    # don't forget to list any other extensions you want enabled,
-    # including those that are enabled by default!
     - amsmath
     - dollarmath
     - attrs_inline
@@ -32,7 +30,7 @@ parse:
     - smartquotes
     - substitution
     - strikethrough
-    - tasklist  # Additional extension
+    - tasklist  
 
 html:
   analytics:
