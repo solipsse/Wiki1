@@ -135,7 +135,7 @@ Only with HTML
 </td><td>
 And so on...</td></tr> </table> 
 
-```{list-table}
+:::{list-table}
 :header-rows: 1
 
 * - Col1
@@ -144,10 +144,10 @@ And so on...</td></tr> </table>
   - Row2 under Col2
 * - Row3 under Col1
   - Row3 under Col2
-```
+:::
 
 ## Math
-````
+::::
 Inline $ <equation> $
 block
 $$
@@ -155,17 +155,17 @@ $$ (mylabel)
 
 same as 
 
-``` {math}
+::: {math}
 :label: eqlabel
 <equation>
-```
+:::
 
 since I include amsmath, we can use
 \begin{equation}
 \end{equation}
 ...as well
 
-````
+::::
 Inline $x^2 + x =4$
 block
 $$
@@ -173,11 +173,11 @@ x^2 + x =4
 
 $$ (mylabel)
 
-``` {math}
+::: {math}
 :label: eqlabel
 x^2 + x =4
 
-```
+:::
 
 since I include amsmath, we can use
 \begin{equation}
@@ -190,7 +190,7 @@ I can reference {eq}`mylabel` and {eq}`eqlabel`
 ## Links and Images
 
 
-```md
+:::md
 Inline link
 [Name](url or file-path)
 
@@ -206,37 +206,37 @@ Images
 [reference text]: url
 [1]: url or file-path
 [reference-link]: url
-```
+:::
   
-````
-```{figure} ./path/to/figure.jpg
+::::
+:::{figure} ./path/to/figure.jpg
 :name: image-1 
 :height: 120px
 
 caption
-```
+:::
 
-```{image} ./path/to/image.jpg
+:::{image} ./path/to/image.jpg
 :height: 150px
 :name: figure-example
 
 Here is my figure caption!
-```
-````
+:::
+::::
 ## Footnotes
 
-```md
+:::md
 Footnote.[^1]
 
 Some other important footnote.[^2]
 
 [^1] : Footnotes
 [^2] : Footnotes
-```
+:::
 
 ## Numbered List
 
-```md
+:::md
 1. One
 2. Two
 3. Three
@@ -246,10 +246,10 @@ Some other important footnote.[^2]
 - [ ] Todo 1
 - [ ] Todo 1
 - [x] Todo 1
-```
+:::
 
 ## Button
-```md
+:::md
 <kbd>cmd + shift + p</kbd>
 <details>
   <summary>Title</summary>
@@ -257,7 +257,7 @@ Some other important footnote.[^2]
 - Another thing <br>
 Another line
 </details>
-```
+:::
 <kbd>cmd + shift + p</kbd>
 
 <details>
@@ -268,29 +268,29 @@ Another line
 </details>
 
 ## Diagram
-```mermaid
+:::mermaid
 pie
 "Movies" : 80
 "TV shows" : 20
-```
+:::
 
 ## Misc
-```
+:::
 Horizontal Rule
 ---
-```
+:::
 
 ## MyST Syntax
 
-````
+::::
 
-```{admonition} Title
+:::{admonition} Title
 :class: <name> (may or may not be use)
 
 Text
 
-```
-````
+:::
+::::
 
 Admonition type:
 
@@ -305,14 +305,14 @@ Admonition type:
 - important
 
 code cell tag
-````
-```{code-cell} ipython3
+::::
+:::{code-cell} ipython3
 :tags: ["following tag name"]
 
 note = "Python syntax highlighting"
 print(note)
-```
-````
+:::
+::::
 - "full-width"
 - "scroll-output"
 - "margin"
@@ -324,58 +324,58 @@ print(note)
 - "remove-cell"
 - "raises-exception"  
 
-```{toggle}
+:::{toggle}
 This is a toggle
-```
+:::
 
-```{admonition} Click the button to reveal!
+:::{admonition} Click the button to reveal!
 :class: dropdown
 Some hidden toggle content!
-```
+:::
 
-```{dropdown}
+:::{dropdown}
 This is a drop down
-```
+:::
 
-````{grid}
+::::{grid}
 :gutter: 2
 
-```{grid-item}
+:::{grid-item}
 :outline:
 A
-```
-```{grid-item}
+:::
+:::{grid-item}
 :outline:
 B
-```
-```{grid-item}
+:::
+:::{grid-item}
 :outline:
 C
-```
-```{grid-item}
+:::
+:::{grid-item}
 :outline:
 D
-```
+:::
 
-````
+::::
 
-````{grid}
+::::{grid}
 :gutter: 3
 
-```{grid-item-card} One!
+:::{grid-item-card} One!
 Here's the first card.
-```
+:::
 
-```{grid-item-card} Two!
+:::{grid-item-card} Two!
 Here's the second card.
-```
+:::
 
-```{grid-item-card} Three!
+:::{grid-item-card} Three!
 Here's the third card.
-```
-````
+:::
+::::
 
-```
+:::
 A card title: The argument given to the directive.
 
 A card header: Any content that precedes a line with ^^^.
@@ -383,29 +383,29 @@ A card header: Any content that precedes a line with ^^^.
 A card footer: Any content that comes after a line with +++.
 
 A card body: Any content that comes in between ^^^ and +++.
-```
+:::
 
-````{card}
+::::{card}
 Content of the top card.
 
 {bdg-primary}`example-badge`
 
-````
+::::
 
-````{card}
+::::{card}
 
-```{button-ref} content/cards
+:::{button-ref} content/cards
 :class: stretched-link
 
 Clickable bottom card
-```
+:::
 
-````
+::::
 
-```{admonition} Click here!
+:::{admonition} Click here!
 :class: tip, dropdown
 Here's what's inside!
-```
+:::
 
 :::{note}
 :class: dropdown
@@ -414,32 +414,32 @@ The note body will be hidden!
 
 Myst tab with normal sphinx design
 
-````{tab-set}
-```{tab-item} Tab 1 title
+::::{tab-set}
+:::{tab-item} Tab 1 title
 My first tab
-```
+:::
 
-```{tab-item} Tab 2 title
+:::{tab-item} Tab 2 title
 My second tab with `some code`!
-```
-````
+:::
+::::
 
 sphinx inline tab extension:  
 
-````{tab} Python
+::::{tab} Python
 ```python
 def main():
     return
 ```
-````
+::::
 
-````{tab} C++
+::::{tab} C++
 ```c++
 int main(const int argc, const char **argv) {
   return 0;
 }
 ```
-````
+::::
 
 Isn't it cool
 
