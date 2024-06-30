@@ -33,6 +33,9 @@ html[data-theme=dark] {
   color-scheme: dark;
 }
 
+:root {
+  --bs-border-color: #484364;
+}
 .table{
   --bs-table-border-color: #484364;
 }
