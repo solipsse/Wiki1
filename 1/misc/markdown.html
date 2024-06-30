@@ -549,10 +549,10 @@ $$ (mylabel)
 
 same as 
 
-``` {math}
+::: {math}
 :label: eqlabel
 &lt;equation&gt;
-```
+:::
 
 since I include amsmath, we can use
 \begin{equation}
@@ -570,8 +570,8 @@ x^2 + x =4</p>
 <div class="math notranslate nohighlight" id="equation-eqlabel">
 <span class="eqno">()<a class="headerlink" href="#equation-eqlabel" title="Permalink to this equation">#</a></span>\[x^2 + x =4\]</div>
 <p>since I include amsmath, we can use</p>
-<div class="amsmath math notranslate nohighlight" id="equation-47e3b7d5-bf76-47fa-9d76-f6782858364a">
-<span class="eqno">()<a class="headerlink" href="#equation-47e3b7d5-bf76-47fa-9d76-f6782858364a" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5528d5e0-9a3d-4f7c-a2d4-fc4c6274b8dd">
+<span class="eqno">()<a class="headerlink" href="#equation-5528d5e0-9a3d-4f7c-a2d4-fc4c6274b8dd" title="Permalink to this equation">#</a></span>\[\begin{equation}
 x^2 + x =4
 \end{equation}\]</div>
 <p>…as well</p>
@@ -596,19 +596,20 @@ Images
 [<span class="nl">reference-link</span>]: <span class="na">url</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure} ./path/to/figure.jpg
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+:::{figure} ./path/to/figure.jpg
 :name: image-1 
 :height: 120px
 
 caption
-```
+:::
 
-```{image} ./path/to/image.jpg
+:::{image} ./path/to/image.jpg
 :height: 150px
 :name: figure-example
 
 Here is my figure caption!
-```
+:::
 </pre></div>
 </div>
 </section>
@@ -674,12 +675,12 @@ Another line
 <section id="myst-syntax">
 <h2>MyST Syntax<a class="headerlink" href="#myst-syntax" title="Permalink to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-```{admonition} Title
-:class: &lt;name&gt; (may or may not be use)
+<span class="p">:::{</span><span class="n">admonition</span><span class="p">}</span> <span class="n">Title</span>
+<span class="p">:</span><span class="n">class</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">may</span> <span class="ow">or</span> <span class="n">may</span> <span class="ow">not</span> <span class="n">be</span> <span class="n">use</span><span class="p">)</span>
 
-Text
+<span class="n">Text</span>
 
-```
+<span class="p">:::</span>
 </pre></div>
 </div>
 <p>Admonition type:</p>
@@ -695,12 +696,13 @@ Text
 <li><p>important</p></li>
 </ul>
 <p>code cell tag</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell} ipython3
-:tags: [&quot;following tag name&quot;]
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="p">:::{</span><span class="n">code</span><span class="o">-</span><span class="n">cell</span><span class="p">}</span> <span class="n">ipython3</span>
+<span class="p">:</span><span class="n">tags</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;following tag name&quot;</span><span class="p">]</span>
 
-note = &quot;Python syntax highlighting&quot;
-print(note)
-```
+<span class="n">note</span> <span class="o">=</span> <span class="s2">&quot;Python syntax highlighting&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">note</span><span class="p">)</span>
+<span class="p">:::</span>
 </pre></div>
 </div>
 <ul class="simple">
