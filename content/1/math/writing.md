@@ -1,12 +1,18 @@
 # Discrete Mathematic
 
-## 1. Foundations
-### Set Theory
+## Foundations
+### 1. Set Theory
 :::{admonition} Definition
 :class: dropdown, note
 
 Set
 : A collection of distinct objects, considered as an object in its own right.
+
+Tuple ($a_1, a_2,\ldots,a_n$)
+: An ordered list of elements. $n$-tuple has $n$ elemnets. 
+
+Bag/Multiset [^bag]
+: A collection of elements where each element can appear more than once. The multiplicity of an element is the number of times it appears in the bag.
 
 Element
 : An object that belongs to a set.
@@ -71,10 +77,11 @@ Infinity
 : There exists a set $\mathbb{N}$ that contains the $\phi$ and is closed under the successor function.
 
 Replacement
-: The image of a set under any definable function is also a set.
+: The image($R_f$) of a set under any definable function is also a set.
 
 Choice
 : For any set of non-null sets, there exists a choice function that selects an element from each set.
+: *This implies the [Well-Ordering Principle][WoP]*
 :::
 
 :::{admonition} Lemma
@@ -105,6 +112,10 @@ De Morgan's, VI <- I
 : $\overline{A+B}\equiv\bar{A}\bar{B}$
 : $\overline{AB}\equiv\bar{A}+\bar{B}$
 
+Absorbtion, VII
+: $A+(AB)\equiv A$
+: $A(A+B)\equiv A$
+
 **Like Algebra**
 
 Double Negation, I
@@ -133,7 +144,7 @@ Cancellation, 4
 
 **Difference Rule**
 
-Involution[^1], 5
+Involution[^involution], 5
 : $A-(A-B)\equiv AB$
 
 De Morgan's, 6
@@ -159,8 +170,27 @@ Cantor's Diagonal Lemma
 
 Zorn's Lemma
 : If every chain (totally ordered subset) in a partially ordered set \( P \) has an upper bound in \( P \), then \( P \) contains at least one maximal element.
-
 :::
+#### Well-Ordering Principle
+::::{admonition} Theorem 1.1 - Well-Ordering Principle[^wop]
+:class: tip, dropdown
+
+:::{admonition} Proof
+:class: toggle
+
+To be continue...
+:::
+
+---
+
+**Importance**
+
+Induction Principle
+: Foundation for mathematical induction over natural number.
+
+Set Theory
+: foundational results about sets and their properties, especially those related to ordering and minimal elements.
+::::
 
 ### Logic
 - Propositional Logic (Statements, Connectives, Truth Tables)
@@ -248,14 +278,18 @@ Zorn's Lemma
 ### Turing Machines
 
 ## Recommended Learning Path
-1. Foundations (Set Theory and Logic)
+1. Foundations (Set Theory, Logic, Relation and Function)
 2. Counting and Combinatorics
-3. Relations and Functions
-4. Number Theory
-5. Graph Theory
-6. Trees
-7. Algebraic Structures
-8. Automata Theory and Formal Languages
+3. Number Theory
+4. Graph Theory
+5. Trees
+6. Algebraic Structures
+7. Automata Theory and Formal Languages
+8. Type Theory
 ormal Language
 
-[^1]: a function, transformation, or operator that is equal to its inverse, i.e. which gives the identity when applied to itself.
+[^involution]: a function, transformation, or operator that is equal to its inverse, i.e. which gives the identity when applied to itself.
+[^bag]: Not as important as other data strucutre for now.
+[^wop]: every non-empty set of positive integers (or more generally, every non-empty subset of a well-ordered set) has a least element. In simpler terms, it states that any subset of integers or set with a defined ordering will have a smallest element.
+
+[WoP]: #well-ordering-principle
