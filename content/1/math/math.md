@@ -4,8 +4,8 @@ This is meant to be a wikipedia of all mathematical knowledge. It will prioritis
 Take a look at [Physic-wiki](../physic/physic.md) and [CS-wiki](../cs/cs.md)
 
 [reading list][1]
-[AoPS Wiki][2]
-[writing area](writing.md)
+[AoPS Wiki][2] \
+[This](writing.md) is where I write all my math for learning before they get push here.
 
 ## [Algebra](algebra.ipynb)
 
