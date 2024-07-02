@@ -12,6 +12,7 @@ sphinx:
     html_css_files:
       - rose-pine-dawn.css
       - rose-pine-moon.css
+      - font.css
     html_js_files:
       - toggle-theme.js
     # html_theme: furo

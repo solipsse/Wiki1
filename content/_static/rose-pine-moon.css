@@ -33,6 +33,6 @@ html[data-theme=dark] {
   --bs-border-color: #484364;
   color-scheme: dark;
 }
-  footer.bd-footer-content {
-    border-top: 1px solid var(--bs-border-color);
-  }
+footer.bd-footer-content {
+  border-top: 1px solid var(--bs-border-color);
+}
