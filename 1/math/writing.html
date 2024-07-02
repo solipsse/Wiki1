@@ -336,14 +336,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-and-combinatorics">2. Counting and Combinatorics</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-counting-principles">Basic Counting Principles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-counting-techniques">Advanced Counting Techniques</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-and-functions">3. Relations and Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-and-functions">2. Relations and Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-and-combinatorics">3. Counting and Combinatorics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-counting-principles">Basic Counting Principles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-counting-techniques">Advanced Counting Techniques</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-theory">4. Number Theory</a><ul class="nav section-nav flex-column">
@@ -396,19 +396,19 @@ document.write(`
 <div class="dropdown note admonition">
 <p class="admonition-title">Definition</p>
 <dl class="simple myst">
-<dt>Set</dt><dd><p>A collection of distinct objects, considered as an object in its own right</p>
+<dt>Set</dt><dd><p>A collection of distinct objects, considered as an object in its own right.</p>
 </dd>
-<dt>Element</dt><dd><p>an object that belongs to a set</p>
+<dt>Element</dt><dd><p>An object that belongs to a set.</p>
 </dd>
-<dt>Subset</dt><dd><p><span class="math notranslate nohighlight">\(A \subseteq B\)</span> if ever element of <span class="math notranslate nohighlight">\(A\)</span> is also an element of <span class="math notranslate nohighlight">\(B\)</span></p>
+<dt>Subset</dt><dd><p><span class="math notranslate nohighlight">\(A \subseteq B\)</span> if ever element of <span class="math notranslate nohighlight">\(A\)</span> is also an element of <span class="math notranslate nohighlight">\(B\)</span>.</p>
 </dd>
-<dt>Proper Subset</dt><dd><p>ALl the subset not including it self. As seen in the “less than” only sign <span class="math notranslate nohighlight">\(\subset\)</span></p>
+<dt>Proper Subset</dt><dd><p>ALl the subset not including it self. As seen in the “less than” only sign <span class="math notranslate nohighlight">\(\subset\)</span>.</p>
 </dd>
-<dt>Null Set <span class="math notranslate nohighlight">\(\phi\)</span></dt><dd><p>An empty set denoted <span class="math notranslate nohighlight">\(\phi = \{\}\)</span></p>
+<dt>Null Set <span class="math notranslate nohighlight">\(\phi\)</span></dt><dd><p>An empty set denoted <span class="math notranslate nohighlight">\(\phi = \{\}\)</span>.</p>
 </dd>
-<dt>Universal set <span class="math notranslate nohighlight">\(\mathcal{U}\)</span></dt><dd><p>The set that contains all the objects under consideration</p>
+<dt>Universal set <span class="math notranslate nohighlight">\(\mathcal{U}\)</span></dt><dd><p>The set that contains all the objects under consideration.</p>
 </dd>
-<dt>Power set</dt><dd><p>The set of all subsets of a set <span class="math notranslate nohighlight">\(A\)</span>, denoted by <span class="math notranslate nohighlight">\(\mathcal{P}(A)\)</span></p>
+<dt>Power set</dt><dd><p>The set of all subsets of a set <span class="math notranslate nohighlight">\(A\)</span>, denoted by <span class="math notranslate nohighlight">\(\mathcal{P}(A)\)</span>.</p>
 </dd>
 </dl>
 <p><strong>Operation</strong></p>
@@ -430,7 +430,7 @@ document.write(`
 <p class="admonition-title">Axiom</p>
 <p><strong>ZF Set theory</strong></p>
 <dl class="simple myst">
-<dt>Extensionality</dt><dd><p>Two sets are equal iff they have same element</p>
+<dt>Extensionality</dt><dd><p>Two sets are equal iff they have same element.</p>
 </dd>
 <dd><p><span class="math notranslate nohighlight">\(\forall A\forall B (\forall x (x\in A \iff x \in B)\implies A=B)\)</span></p>
 </dd>
@@ -452,10 +452,84 @@ document.write(`
 </dd>
 </dl>
 </div>
-<div class="dropdown note admonition">
+<div class="dropdown notev admonition">
 <p class="admonition-title">Lemma</p>
+<p><strong>Laws in both set and logic</strong></p>
 <dl class="simple myst">
-<dt>Subset</dt><dd><p>For any sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, if <span class="math notranslate nohighlight">\(A\subseteq B\)</span> and <span class="math notranslate nohighlight">\(B\subseteq C\)</span> -&gt; <span class="math notranslate nohighlight">\(A\subseteq C\)</span></p>
+<dt>Double Negation, I</dt><dd><p><span class="math notranslate nohighlight">\(\overline{\overline{A}} \equiv A\)</span></p>
+</dd>
+<dt>Identity, II</dt><dd><p><span class="math notranslate nohighlight">\(A+\phi\equiv A\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A\mathcal{U} \equiv A\)</span></p>
+</dd>
+<dt>Idempotent, III</dt><dd><p><span class="math notranslate nohighlight">\(A+A \equiv A\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(AA \equiv A\)</span></p>
+</dd>
+<dt>Inverse, IV</dt><dd><p><span class="math notranslate nohighlight">\(A+\bar{A}\equiv\mathcal{U}\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A\bar{A}\equiv\phi\)</span></p>
+</dd>
+<dt>Domination, V</dt><dd><p><span class="math notranslate nohighlight">\(A+\mathcal{U}\equiv\mathcal{U}\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A\phi\equiv\phi\)</span></p>
+</dd>
+<dt>De Morgan’s, VI &lt;- I</dt><dd><p><span class="math notranslate nohighlight">\(\overline{A+B}\equiv\bar{A}\bar{B}\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(\overline{AB}\equiv\bar{A}+\bar{B}\)</span></p>
+</dd>
+</dl>
+<p><strong>Like Algebra</strong></p>
+<dl class="simple myst">
+<dt>Double Negation, I</dt><dd><p>Even number of negation is equivalent to having no negation.</p>
+</dd>
+<dt>Property of zero</dt><dd><p>II Identity property of Addition, first one, 1 + 0 = 1</p>
+</dd>
+<dd><p>V Multiplicative, second one, 1*0 = 0</p>
+</dd>
+<dd><p>4 Identity property of Substraction, second one, A-0 = A</p>
+</dd>
+<dt>Commutative, 1</dt><dd><p><span class="math notranslate nohighlight">\(A+B\equiv B+A\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(AB\equiv BA\)</span></p>
+</dd>
+<dt>Associative, 2</dt><dd><p><span class="math notranslate nohighlight">\(A+(B+C)\equiv (A+B)+C\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A(BC)\equiv (AB)C\)</span></p>
+</dd>
+<dt>Distributive, 3</dt><dd><p><span class="math notranslate nohighlight">\(A+(BC)\equiv (A+B)(A+C)\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A(B+C)\equiv (AB)+(AC)\)</span></p>
+</dd>
+<dt>Cancellation, 4</dt><dd><p><span class="math notranslate nohighlight">\(A-A\equiv\phi\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A-\phi\equiv A\)</span></p>
+</dd>
+</dl>
+<p><strong>Difference Rule</strong></p>
+<dl class="simple myst">
+<dt>Involution<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, 5</dt><dd><p><span class="math notranslate nohighlight">\(A-(A-B)\equiv AB\)</span></p>
+</dd>
+<dt>De Morgan’s, 6</dt><dd><p><span class="math notranslate nohighlight">\(A-(B+C)\equiv (A-B)(A-C)\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A-(BC)\equiv (A-B)+(A-C)\)</span></p>
+</dd>
+<dt>Right-Distributive, 7</dt><dd><p><span class="math notranslate nohighlight">\((A+B)-C\equiv (A-C)+(B-C)\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\((AC)-C\equiv (A-C)(B-C)\)</span></p>
+</dd>
+</dl>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Additional Lemmas</p>
+<dl class="simple myst">
+<dt>Transitive Closure Lemma</dt><dd><p>If ( R ) is a transitive relation, then its transitive closure ( R^+ ) is also transitive.</p>
+</dd>
+<dt>Schröder-Bernstein Lemma</dt><dd><p>If there are injections from set ( A ) to set ( B ) and from set ( B ) to set ( A ), then there is a bijection between ( A ) and ( B ).</p>
+</dd>
+<dt>Cantor’s Diagonal Lemma</dt><dd><p>There is no surjection from a set ( A ) to its power set ( \mathcal{P}(A) ).</p>
+</dd>
+<dt>Zorn’s Lemma</dt><dd><p>If every chain (totally ordered subset) in a partially ordered set ( P ) has an upper bound in ( P ), then ( P ) contains at least one maximal element.</p>
 </dd>
 </dl>
 </div>
@@ -470,26 +544,8 @@ document.write(`
 </ul>
 </section>
 </section>
-<section id="counting-and-combinatorics">
-<h2>2. Counting and Combinatorics<a class="headerlink" href="#counting-and-combinatorics" title="Permalink to this heading">#</a></h2>
-<section id="basic-counting-principles">
-<h3>Basic Counting Principles<a class="headerlink" href="#basic-counting-principles" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Permutations and Combinations</p></li>
-<li><p>Pigeonhole Principle</p></li>
-</ul>
-</section>
-<section id="advanced-counting-techniques">
-<h3>Advanced Counting Techniques<a class="headerlink" href="#advanced-counting-techniques" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Inclusion-Exclusion Principle</p></li>
-<li><p>Recurrence Relations</p></li>
-<li><p>Generating Functions</p></li>
-</ul>
-</section>
-</section>
 <section id="relations-and-functions">
-<h2>3. Relations and Functions<a class="headerlink" href="#relations-and-functions" title="Permalink to this heading">#</a></h2>
+<h2>2. Relations and Functions<a class="headerlink" href="#relations-and-functions" title="Permalink to this heading">#</a></h2>
 <section id="relations">
 <h3>Relations<a class="headerlink" href="#relations" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
@@ -504,6 +560,24 @@ document.write(`
 <li><p>Definition and Types (Injective, Surjective, Bijective)</p></li>
 <li><p>Composition and Inverse Functions</p></li>
 <li><p>Graph of a Function</p></li>
+</ul>
+</section>
+</section>
+<section id="counting-and-combinatorics">
+<h2>3. Counting and Combinatorics<a class="headerlink" href="#counting-and-combinatorics" title="Permalink to this heading">#</a></h2>
+<section id="basic-counting-principles">
+<h3>Basic Counting Principles<a class="headerlink" href="#basic-counting-principles" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Permutations and Combinations</p></li>
+<li><p>Pigeonhole Principle</p></li>
+</ul>
+</section>
+<section id="advanced-counting-techniques">
+<h3>Advanced Counting Techniques<a class="headerlink" href="#advanced-counting-techniques" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Inclusion-Exclusion Principle</p></li>
+<li><p>Recurrence Relations</p></li>
+<li><p>Generating Functions</p></li>
 </ul>
 </section>
 </section>
@@ -623,6 +697,11 @@ document.write(`
 <li><p>Automata Theory and Formal Languages
 ormal Language</p></li>
 </ol>
+<hr class="footnotes docutils" />
+<aside class="footnote brackets" id="id2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>a function, transformation, or operator that is equal to its inverse, i.e. which gives the identity when applied to itself.</p>
+</aside>
 </section>
 </section>
 
@@ -676,14 +755,14 @@ ormal Language</p></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-and-combinatorics">2. Counting and Combinatorics</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-counting-principles">Basic Counting Principles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-counting-techniques">Advanced Counting Techniques</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-and-functions">3. Relations and Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations-and-functions">2. Relations and Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-and-combinatorics">3. Counting and Combinatorics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-counting-principles">Basic Counting Principles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-counting-techniques">Advanced Counting Techniques</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#number-theory">4. Number Theory</a><ul class="nav section-nav flex-column">
