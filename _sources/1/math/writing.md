@@ -193,6 +193,87 @@ Set Theory
 ::::
 
 ### Logic
+
+:::{admonition} Definition
+:class: dropdown, note
+
+Proposition
+: A declarative statement that hold one truth value (True or False)
+
+Contingency
+: A proposition that is neither a tautology
+nor a contradiction.
+
+Predicate
+: Relation involving variables that become propositions when the variables are given specific values.
+
+Vacuous Truth/ Vacuously True
+: True in an empty sort of ways. There is no statement that proof it to be false otherwise.
+: The conditional statement P -> Q for all $\bar p$ then it will always be true, because there is no reason for them to be false.
+
+Implication in semantics
+: ![Implication Semantic](../data/implication.png) Choose whether you believe these two sentences mean the same thing or not.
+
+Logical Equivalence $\equiv, \Leftrightarrow$
+: two logical expression is the same if their truth table are the same. 
+
+Tautology $T$
+: Proposition that is always TRUE
+
+Contradiction $F$
+: Proposition that is always FALSE
+
+Antecendent
+Consequent
+
+**Argument**
+
+Valid argument and inference rule
+
+Premise
+: Initial information that we know/assume to be true
+
+
+
+Modus Ponen
+Modus Tollen
+Generalisation
+Specialisation
+Contradiction
+
+Normal Form
+Conical Form
+Conjunctive Normal Form
+Disjunctive Normal Form
+
+r -> s is a Tautology then we write r => s
+: $[(r\to s)\to T] \to r\Rightarrow s $
+
+r <-> s is a tautology then we write r <=> s 
+: $[(r\leftrightarrow s)\to T] \to r\Leftrightarrow s$ [^LE]
+: $[(r\leftrightarrow s)\to T] \to r\equiv s$ [^Identical]
+
+:::
+
+:::{admonition} Axiom
+:class: dropdown, note
+
+:::
+
+:::{admonition} Lemma
+:class: dropdown, note
+
+**Set Law's Analouge for Logic**
+
+Identity, II
+: $P+F \equiv P$
+: $PT \equiv P$
+
+Domination, V
+: $P+T \equiv T$ (for OR, if one is true, then other will be true)
+: $PF\equiv F$ (for AND, if one is false, then there is no true)
+:::
+
 - Propositional Logic (Statements, Connectives, Truth Tables)
 - Predicate Logic (Quantifiers, Predicates)
 - Logical Equivalences
@@ -290,6 +371,8 @@ ormal Language
 
 [^involution]: a function, transformation, or operator that is equal to its inverse, i.e. which gives the identity when applied to itself.
 [^bag]: Not as important as other data strucutre for now.
-[^wop]: every non-empty set of positive integers (or more generally, every non-empty subset of a well-ordered set) has a least element. In simpler terms, it states that any subset of integers or set with a defined ordering will have a smallest element.
+[^wop]: Every non-empty set of positive integers (or more generally, every non-empty subset of a well-ordered set) has a least element. In simpler terms, it states that any subset of integers or set with a defined ordering will have a smallest element.
+[^LE]: Prefer to use this for writing proof of logical equivalence in a logical line by line writing. {we can addd the left and right arrow to every equal at the end of the proof}
+[^Identical]: Prefer to use this for the end to conclude that first statement is indentical to the last statement.
 
 [WoP]: #well-ordering-principle

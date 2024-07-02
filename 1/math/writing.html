@@ -567,6 +567,69 @@ document.write(`
 </section>
 <section id="logic">
 <h3>Logic<a class="headerlink" href="#logic" title="Permalink to this heading">#</a></h3>
+<div class="dropdown note admonition">
+<p class="admonition-title">Definition</p>
+<dl class="simple myst">
+<dt>Proposition</dt><dd><p>A declarative statement that hold one truth value (True or False)</p>
+</dd>
+<dt>Contingency</dt><dd><p>A proposition that is neither a tautology
+nor a contradiction.</p>
+</dd>
+<dt>Predicate</dt><dd><p>Relation involving variables that become propositions when the variables are given specific values.</p>
+</dd>
+<dt>Vacuous Truth/ Vacuously True</dt><dd><p>True in an empty sort of ways. There is no statement that proof it to be false otherwise.</p>
+</dd>
+<dd><p>The conditional statement P -&gt; Q for all <span class="math notranslate nohighlight">\(\bar p\)</span> then it will always be true, because there is no reason for them to be false.</p>
+</dd>
+<dt>Implication in semantics</dt><dd><p><img alt="Implication Semantic" src="../../_images/implication.png" /> Choose whether you believe these two sentences mean the same thing or not.</p>
+</dd>
+<dt>Logical Equivalence <span class="math notranslate nohighlight">\(\equiv, \Leftrightarrow\)</span></dt><dd><p>two logical expression is the same if their truth table are the same.</p>
+</dd>
+<dt>Tautology <span class="math notranslate nohighlight">\(T\)</span></dt><dd><p>Proposition that is always TRUE</p>
+</dd>
+<dt>Contradiction <span class="math notranslate nohighlight">\(F\)</span></dt><dd><p>Proposition that is always FALSE</p>
+</dd>
+</dl>
+<p>Antecendent
+Consequent</p>
+<p><strong>Argument</strong></p>
+<p>Valid argument and inference rule</p>
+<dl class="simple myst">
+<dt>Premise</dt><dd><p>Initial information that we know/assume to be true</p>
+</dd>
+</dl>
+<p>Modus Ponen
+Modus Tollen
+Generalisation
+Specialisation
+Contradiction</p>
+<p>Normal Form
+Conical Form
+Conjunctive Normal Form
+Disjunctive Normal Form</p>
+<dl class="simple myst">
+<dt>r -&gt; s is a Tautology then we write r =&gt; s</dt><dd><p><span class="math notranslate nohighlight">\([(r\to s)\to T] \to r\Rightarrow s \)</span></p>
+</dd>
+<dt>r &lt;-&gt; s is a tautology then we write r &lt;=&gt; s</dt><dd><p><span class="math notranslate nohighlight">\([(r\leftrightarrow s)\to T] \to r\Leftrightarrow s\)</span> <a class="footnote-reference brackets" href="#le" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\([(r\leftrightarrow s)\to T] \to r\equiv s\)</span> <a class="footnote-reference brackets" href="#identical" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></p>
+</dd>
+</dl>
+</div>
+<div class="dropdown note admonition">
+<p class="admonition-title">Lemma</p>
+<p><strong>Set Law’s Analouge for Logic</strong></p>
+<dl class="simple myst">
+<dt>Identity, II</dt><dd><p><span class="math notranslate nohighlight">\(P+F \equiv P\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(PT \equiv P\)</span></p>
+</dd>
+<dt>Domination, V</dt><dd><p><span class="math notranslate nohighlight">\(P+T \equiv T\)</span> (for OR, if one is true, then other will be true)</p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(PF\equiv F\)</span> (for AND, if one is false, then there is no true)</p>
+</dd>
+</dl>
+</div>
 <ul class="simple">
 <li><p>Propositional Logic (Statements, Connectives, Truth Tables)</p></li>
 <li><p>Predicate Logic (Quantifiers, Predicates)</p></li>
@@ -739,7 +802,15 @@ ormal Language</p></li>
 </aside>
 <aside class="footnote brackets" id="wop" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
-<p>every non-empty set of positive integers (or more generally, every non-empty subset of a well-ordered set) has a least element. In simpler terms, it states that any subset of integers or set with a defined ordering will have a smallest element.</p>
+<p>Every non-empty set of positive integers (or more generally, every non-empty subset of a well-ordered set) has a least element. In simpler terms, it states that any subset of integers or set with a defined ordering will have a smallest element.</p>
+</aside>
+<aside class="footnote brackets" id="le" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Prefer to use this for writing proof of logical equivalence in a logical line by line writing. {we can addd the left and right arrow to every equal at the end of the proof}</p>
+</aside>
+<aside class="footnote brackets" id="identical" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p>Prefer to use this for the end to conclude that first statement is indentical to the last statement.</p>
 </aside>
 </section>
 </section>
