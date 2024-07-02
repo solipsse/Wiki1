@@ -331,8 +331,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foundations">1. Foundations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-theory">Set Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foundations">Foundations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-theory">1. Set Theory</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#well-ordering-principle">Well-Ordering Principle</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a></li>
 </ul>
 </li>
@@ -390,13 +393,17 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="discrete-mathematic">
 <h1>Discrete Mathematic<a class="headerlink" href="#discrete-mathematic" title="Permalink to this heading">#</a></h1>
 <section id="foundations">
-<h2>1. Foundations<a class="headerlink" href="#foundations" title="Permalink to this heading">#</a></h2>
+<h2>Foundations<a class="headerlink" href="#foundations" title="Permalink to this heading">#</a></h2>
 <section id="set-theory">
-<h3>Set Theory<a class="headerlink" href="#set-theory" title="Permalink to this heading">#</a></h3>
+<h3>1. Set Theory<a class="headerlink" href="#set-theory" title="Permalink to this heading">#</a></h3>
 <div class="dropdown note admonition">
 <p class="admonition-title">Definition</p>
 <dl class="simple myst">
 <dt>Set</dt><dd><p>A collection of distinct objects, considered as an object in its own right.</p>
+</dd>
+<dt>Tuple (<span class="math notranslate nohighlight">\(a_1, a_2,\ldots,a_n\)</span>)</dt><dd><p>An ordered list of elements. <span class="math notranslate nohighlight">\(n\)</span>-tuple has <span class="math notranslate nohighlight">\(n\)</span> elemnets.</p>
+</dd>
+<dt>Bag/Multiset <a class="footnote-reference brackets" href="#bag" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></dt><dd><p>A collection of elements where each element can appear more than once. The multiplicity of an element is the number of times it appears in the bag.</p>
 </dd>
 <dt>Element</dt><dd><p>An object that belongs to a set.</p>
 </dd>
@@ -446,9 +453,11 @@ document.write(`
 </dd>
 <dt>Infinity</dt><dd><p>There exists a set <span class="math notranslate nohighlight">\(\mathbb{N}\)</span> that contains the <span class="math notranslate nohighlight">\(\phi\)</span> and is closed under the successor function.</p>
 </dd>
-<dt>Replacement</dt><dd><p>The image of a set under any definable function is also a set.</p>
+<dt>Replacement</dt><dd><p>The image(<span class="math notranslate nohighlight">\(R_f\)</span>) of a set under any definable function is also a set.</p>
 </dd>
 <dt>Choice</dt><dd><p>For any set of non-null sets, there exists a choice function that selects an element from each set.</p>
+</dd>
+<dd><p><em>This implies the <span class="xref myst">Well-Ordering Principle</span></em></p>
 </dd>
 </dl>
 </div>
@@ -477,6 +486,10 @@ document.write(`
 <dt>De Morgan’s, VI &lt;- I</dt><dd><p><span class="math notranslate nohighlight">\(\overline{A+B}\equiv\bar{A}\bar{B}\)</span></p>
 </dd>
 <dd><p><span class="math notranslate nohighlight">\(\overline{AB}\equiv\bar{A}+\bar{B}\)</span></p>
+</dd>
+<dt>Absorbtion, VII</dt><dd><p><span class="math notranslate nohighlight">\(A+(AB)\equiv A\)</span></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\(A(A+B)\equiv A\)</span></p>
 </dd>
 </dl>
 <p><strong>Like Algebra</strong></p>
@@ -508,7 +521,7 @@ document.write(`
 </dl>
 <p><strong>Difference Rule</strong></p>
 <dl class="simple myst">
-<dt>Involution<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, 5</dt><dd><p><span class="math notranslate nohighlight">\(A-(A-B)\equiv AB\)</span></p>
+<dt>Involution<a class="footnote-reference brackets" href="#involution" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>, 5</dt><dd><p><span class="math notranslate nohighlight">\(A-(A-B)\equiv AB\)</span></p>
 </dd>
 <dt>De Morgan’s, 6</dt><dd><p><span class="math notranslate nohighlight">\(A-(B+C)\equiv (A-B)(A-C)\)</span></p>
 </dd>
@@ -533,6 +546,24 @@ document.write(`
 </dd>
 </dl>
 </div>
+<section id="well-ordering-principle">
+<h4>Well-Ordering Principle<a class="headerlink" href="#well-ordering-principle" title="Permalink to this heading">#</a></h4>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Theorem 1.1 - Well-Ordering Principle<a class="footnote-reference brackets" href="#wop" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p>
+<div class="toggle admonition">
+<p class="admonition-title">Proof</p>
+<p>To be continue…</p>
+</div>
+<hr class="docutils" />
+<p><strong>Importance</strong></p>
+<dl class="simple myst">
+<dt>Induction Principle</dt><dd><p>Foundation for mathematical induction over natural number.</p>
+</dd>
+<dt>Set Theory</dt><dd><p>foundational results about sets and their properties, especially those related to ordering and minimal elements.</p>
+</dd>
+</dl>
+</div>
+</section>
 </section>
 <section id="logic">
 <h3>Logic<a class="headerlink" href="#logic" title="Permalink to this heading">#</a></h3>
@@ -687,20 +718,28 @@ document.write(`
 <section id="recommended-learning-path">
 <h2>Recommended Learning Path<a class="headerlink" href="#recommended-learning-path" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Foundations (Set Theory and Logic)</p></li>
+<li><p>Foundations (Set Theory, Logic, Relation and Function)</p></li>
 <li><p>Counting and Combinatorics</p></li>
-<li><p>Relations and Functions</p></li>
 <li><p>Number Theory</p></li>
 <li><p>Graph Theory</p></li>
 <li><p>Trees</p></li>
 <li><p>Algebraic Structures</p></li>
-<li><p>Automata Theory and Formal Languages
+<li><p>Automata Theory and Formal Languages</p></li>
+<li><p>Type Theory
 ormal Language</p></li>
 </ol>
 <hr class="footnotes docutils" />
-<aside class="footnote brackets" id="id2" role="note">
+<aside class="footnote brackets" id="bag" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Not as important as other data strucutre for now.</p>
+</aside>
+<aside class="footnote brackets" id="involution" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
 <p>a function, transformation, or operator that is equal to its inverse, i.e. which gives the identity when applied to itself.</p>
+</aside>
+<aside class="footnote brackets" id="wop" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>every non-empty set of positive integers (or more generally, every non-empty subset of a well-ordered set) has a least element. In simpler terms, it states that any subset of integers or set with a defined ordering will have a smallest element.</p>
 </aside>
 </section>
 </section>
@@ -750,8 +789,11 @@ ormal Language</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foundations">1. Foundations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-theory">Set Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foundations">Foundations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-theory">1. Set Theory</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#well-ordering-principle">Well-Ordering Principle</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a></li>
 </ul>
 </li>
