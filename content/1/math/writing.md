@@ -29,6 +29,9 @@ Null Set $\phi$
 Universal set $\mathcal{U}$
 : The set that contains all the objects under consideration.
 
+Cardinality
+: The number of elements in the set.
+
 Power set
 : The set of all subsets of a set $A$, denoted by $\mathcal{P}(A)$.
 
@@ -205,14 +208,11 @@ Contingency
 nor a contradiction.
 
 Predicate
-: Relation involving variables that become propositions when the variables are given specific values.
+: Relation involving variables that become propositions when the variables are given specific values or there exist a quantifier on the variable.
 
 Vacuous Truth/ Vacuously True
 : True in an empty sort of ways. There is no statement that proof it to be false otherwise.
 : The conditional statement P -> Q for all $\bar p$ then it will always be true, because there is no reason for them to be false.
-
-Implication in semantics
-: ![Implication Semantic](../data/implication.png) Choose whether you believe these two sentences mean the same thing or not.
 
 Logical Equivalence $\equiv, \Leftrightarrow$
 : two logical expression is the same if their truth table are the same. 
@@ -226,6 +226,31 @@ Contradiction $F$
 Antecendent
 Consequent
 
+**Conditional**
+
+Implication in semantics
+: ![Implication Semantic](../data/implication.png) Choose whether you believe these two sentences mean the same thing or not.
+
+
+R -> S is a Tautology then we write R => S
+: $[(R\to s)\to T] \to R\Rightarrow s $
+
+R <-> S is a tautology then we write R <=> S
+: $[(R\leftrightarrow S)\to T] \to R\Leftrightarrow S$ [^LE]
+: $[(R\leftrightarrow S)\to T] \to R\equiv S$ [^Identical]
+
+Converse of P -> Q
+Inverse of P -> Q
+Contrapositive of P -> Q
+
+Sufficient
+: $A\Rightarrow B$,
+: A is sufficient for B because we know A leads to B and we did not know if without A, can there be B.
+
+Necessary
+: $\bar A\Rightarrow \bar B$
+: For a conditional, A => B, B is necessary for A. Consider the contrapositive, NOT B => NOT A.
+
 **Argument**
 
 Valid argument and inference rule
@@ -233,25 +258,28 @@ Valid argument and inference rule
 Premise
 : Initial information that we know/assume to be true
 
-
-
 Modus Ponen
 Modus Tollen
 Generalisation
 Specialisation
 Contradiction
 
+**Quantifier**
+
+
+Compound Quantifier
+: This only happen when another quantifier is a part of the predicate of the first quantifier.
+
+Negating Quantifier
+: 
+
+**Booolean Algebra** 
+
 Normal Form
 Conical Form
 Conjunctive Normal Form
 Disjunctive Normal Form
 
-r -> s is a Tautology then we write r => s
-: $[(r\to s)\to T] \to r\Rightarrow s $
-
-r <-> s is a tautology then we write r <=> s 
-: $[(r\leftrightarrow s)\to T] \to r\Leftrightarrow s$ [^LE]
-: $[(r\leftrightarrow s)\to T] \to r\equiv s$ [^Identical]
 
 :::
 
@@ -281,6 +309,45 @@ Domination, V
 
 
 ## 2. Relations and Functions
+
+:::{admonition} Definition
+:class: dropdown, note
+
+Relation
+: A relation between two set $A, B$ or $Domain, Range$ is a subset of $A\times B$.
+: It is an ordered pair (a,b) where $(a,b) \in A\times B$
+: We can write a relation e.g. (a,b) means a _own_ b, a > b or any other meaning.
+
+Relation on $A$ / Directed Graph  
+: Relation of A on itself.
+: relate element in a domain with codomain = the domain.
+
+Inverse Relation of AxB
+: Inverse of the relation which is a subset of $A\times B$ is a subset of $B\times A$
+
+Equivalence Relation on $A$
+: Relation that is all reflexive, symmetric, and transitive.
+: Definition of equality. It is the equality of modular arithmetic.
+
+Property of a Relation on $A$ ($x,y \in A$)
+
+Reflexive
+: Relation that relate to itself, $\forall x, f(x) = x$
+
+Symmetric
+: Bidirectional direction, $\forall x,y, f(x)=y \to f(y)=x$
+
+Transitive
+: x -> y and y -> z THEN x -> z
+
+**Function**
+
+Function
+: Function 1. does something to every input $\in D$ 2. output only one thing $\in R$.
+: Formal: A function, f, between D and R is a **relation** such that $(d,r) \in f$ or $f(d) = r$, and $(d,r) \in f \land (d', r) \in f$ then $d=d'$ 
+
+:::
+
 ### Relations
 - Properties of Relations (Reflexive, Symmetric, Transitive)
 - Equivalence Relations and Partitions
