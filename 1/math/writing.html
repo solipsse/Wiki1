@@ -415,6 +415,8 @@ document.write(`
 </dd>
 <dt>Universal set <span class="math notranslate nohighlight">\(\mathcal{U}\)</span></dt><dd><p>The set that contains all the objects under consideration.</p>
 </dd>
+<dt>Cardinality</dt><dd><p>The number of elements in the set.</p>
+</dd>
 <dt>Power set</dt><dd><p>The set of all subsets of a set <span class="math notranslate nohighlight">\(A\)</span>, denoted by <span class="math notranslate nohighlight">\(\mathcal{P}(A)\)</span>.</p>
 </dd>
 </dl>
@@ -575,13 +577,11 @@ document.write(`
 <dt>Contingency</dt><dd><p>A proposition that is neither a tautology
 nor a contradiction.</p>
 </dd>
-<dt>Predicate</dt><dd><p>Relation involving variables that become propositions when the variables are given specific values.</p>
+<dt>Predicate</dt><dd><p>Relation involving variables that become propositions when the variables are given specific values or there exist a quantifier on the variable.</p>
 </dd>
 <dt>Vacuous Truth/ Vacuously True</dt><dd><p>True in an empty sort of ways. There is no statement that proof it to be false otherwise.</p>
 </dd>
 <dd><p>The conditional statement P -&gt; Q for all <span class="math notranslate nohighlight">\(\bar p\)</span> then it will always be true, because there is no reason for them to be false.</p>
-</dd>
-<dt>Implication in semantics</dt><dd><p><img alt="Implication Semantic" src="../../_images/implication.png" /> Choose whether you believe these two sentences mean the same thing or not.</p>
 </dd>
 <dt>Logical Equivalence <span class="math notranslate nohighlight">\(\equiv, \Leftrightarrow\)</span></dt><dd><p>two logical expression is the same if their truth table are the same.</p>
 </dd>
@@ -592,6 +592,30 @@ nor a contradiction.</p>
 </dl>
 <p>Antecendent
 Consequent</p>
+<p><strong>Conditional</strong></p>
+<dl class="simple myst">
+<dt>Implication in semantics</dt><dd><p><img alt="Implication Semantic" src="../../_images/implication.png" /> Choose whether you believe these two sentences mean the same thing or not.</p>
+</dd>
+<dt>R -&gt; S is a Tautology then we write R =&gt; S</dt><dd><p><span class="math notranslate nohighlight">\([(R\to s)\to T] \to R\Rightarrow s \)</span></p>
+</dd>
+<dt>R &lt;-&gt; S is a tautology then we write R &lt;=&gt; S</dt><dd><p><span class="math notranslate nohighlight">\([(R\leftrightarrow S)\to T] \to R\Leftrightarrow S\)</span> <a class="footnote-reference brackets" href="#le" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p>
+</dd>
+<dd><p><span class="math notranslate nohighlight">\([(R\leftrightarrow S)\to T] \to R\equiv S\)</span> <a class="footnote-reference brackets" href="#identical" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></p>
+</dd>
+</dl>
+<p>Converse of P -&gt; Q
+Inverse of P -&gt; Q
+Contrapositive of P -&gt; Q</p>
+<dl class="simple myst">
+<dt>Sufficient</dt><dd><p><span class="math notranslate nohighlight">\(A\Rightarrow B\)</span>,</p>
+</dd>
+<dd><p>A is sufficient for B because we know A leads to B and we did not know if without A, can there be B.</p>
+</dd>
+<dt>Necessary</dt><dd><p><span class="math notranslate nohighlight">\(\bar A\Rightarrow \bar B\)</span></p>
+</dd>
+<dd><p>For a conditional, A =&gt; B, B is necessary for A. Consider the contrapositive, NOT B =&gt; NOT A.</p>
+</dd>
+</dl>
 <p><strong>Argument</strong></p>
 <p>Valid argument and inference rule</p>
 <dl class="simple myst">
@@ -603,18 +627,18 @@ Modus Tollen
 Generalisation
 Specialisation
 Contradiction</p>
+<p><strong>Quantifier</strong></p>
+<dl class="simple myst">
+<dt>Compound Quantifier</dt><dd><p>This only happen when another quantifier is a part of the predicate of the first quantifier.</p>
+</dd>
+</dl>
+<p>Negating Quantifier
+:</p>
+<p><strong>Booolean Algebra</strong></p>
 <p>Normal Form
 Conical Form
 Conjunctive Normal Form
 Disjunctive Normal Form</p>
-<dl class="simple myst">
-<dt>r -&gt; s is a Tautology then we write r =&gt; s</dt><dd><p><span class="math notranslate nohighlight">\([(r\to s)\to T] \to r\Rightarrow s \)</span></p>
-</dd>
-<dt>r &lt;-&gt; s is a tautology then we write r &lt;=&gt; s</dt><dd><p><span class="math notranslate nohighlight">\([(r\leftrightarrow s)\to T] \to r\Leftrightarrow s\)</span> <a class="footnote-reference brackets" href="#le" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p>
-</dd>
-<dd><p><span class="math notranslate nohighlight">\([(r\leftrightarrow s)\to T] \to r\equiv s\)</span> <a class="footnote-reference brackets" href="#identical" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></p>
-</dd>
-</dl>
 </div>
 <div class="dropdown note admonition">
 <p class="admonition-title">Lemma</p>
@@ -640,6 +664,43 @@ Disjunctive Normal Form</p>
 </section>
 <section id="relations-and-functions">
 <h2>2. Relations and Functions<a class="headerlink" href="#relations-and-functions" title="Permalink to this heading">#</a></h2>
+<div class="dropdown note admonition">
+<p class="admonition-title">Definition</p>
+<dl class="simple myst">
+<dt>Relation</dt><dd><p>A relation between two set <span class="math notranslate nohighlight">\(A, B\)</span> or <span class="math notranslate nohighlight">\(Domain, Range\)</span> is a subset of <span class="math notranslate nohighlight">\(A\times B\)</span>.</p>
+</dd>
+<dd><p>It is an ordered pair (a,b) where <span class="math notranslate nohighlight">\((a,b) \in A\times B\)</span></p>
+</dd>
+<dd><p>We can write a relation e.g. (a,b) means a <em>own</em> b, a &gt; b or any other meaning.</p>
+</dd>
+<dt>Relation on <span class="math notranslate nohighlight">\(A\)</span> / Directed Graph</dt><dd><p>Relation of A on itself.</p>
+</dd>
+<dd><p>relate element in a domain with codomain = the domain.</p>
+</dd>
+<dt>Inverse Relation of AxB</dt><dd><p>Inverse of the relation which is a subset of <span class="math notranslate nohighlight">\(A\times B\)</span> is a subset of <span class="math notranslate nohighlight">\(B\times A\)</span></p>
+</dd>
+<dt>Equivalence Relation on <span class="math notranslate nohighlight">\(A\)</span></dt><dd><p>Relation that is all reflexive, symmetric, and transitive.</p>
+</dd>
+<dd><p>Definition of equality. It is the equality of modular arithmetic.</p>
+</dd>
+</dl>
+<p>Property of a Relation on <span class="math notranslate nohighlight">\(A\)</span> (<span class="math notranslate nohighlight">\(x,y \in A\)</span>)</p>
+<dl class="simple myst">
+<dt>Reflexive</dt><dd><p>Relation that relate to itself, <span class="math notranslate nohighlight">\(\forall x, f(x) = x\)</span></p>
+</dd>
+<dt>Symmetric</dt><dd><p>Bidirectional direction, <span class="math notranslate nohighlight">\(\forall x,y, f(x)=y \to f(y)=x\)</span></p>
+</dd>
+<dt>Transitive</dt><dd><p>x -&gt; y and y -&gt; z THEN x -&gt; z</p>
+</dd>
+</dl>
+<p><strong>Function</strong></p>
+<dl class="simple myst">
+<dt>Function</dt><dd><p>Function 1. does something to every input <span class="math notranslate nohighlight">\(\in D\)</span> 2. output only one thing <span class="math notranslate nohighlight">\(\in R\)</span>.</p>
+</dd>
+<dd><p>Formal: A function, f, between D and R is a <strong>relation</strong> such that <span class="math notranslate nohighlight">\((d,r) \in f\)</span> or <span class="math notranslate nohighlight">\(f(d) = r\)</span>, and <span class="math notranslate nohighlight">\((d,r) \in f \land (d', r) \in f\)</span> then <span class="math notranslate nohighlight">\(d=d'\)</span></p>
+</dd>
+</dl>
+</div>
 <section id="relations">
 <h3>Relations<a class="headerlink" href="#relations" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
