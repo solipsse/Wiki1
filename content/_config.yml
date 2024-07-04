@@ -15,6 +15,7 @@ sphinx:
       - font.css
     html_js_files:
       - toggle-theme.js
+      - analytic.js
     # html_theme: furo
 parse:
   myst_enable_extensions:
@@ -33,3 +34,5 @@ parse:
 html:
   analytics:
     google_analytics_id: G-LYW22V2HG4
+latex:
+  preamble: preamble.tex

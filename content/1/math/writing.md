@@ -322,7 +322,7 @@ Relation on $A$ / Directed Graph
 : Relation of A on itself.
 : relate element in a domain with codomain = the domain.
 
-Inverse Relation of AxB
+Inverse Relation of AxB, $\cev R$
 : Inverse of the relation which is a subset of $A\times B$ is a subset of $B\times A$
 
 Equivalence Relation on $A$
