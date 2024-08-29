@@ -5,7 +5,7 @@ Take a look at [Math-wiki](../math/math.md) and [Physic-wiki](../physic/physic.m
 
 Take a look at [AS/A2 CS](../as-a2-cs/cs.md)
 
-## [Programming Paradigm](programming-paradigm.ipynb)
+## [Programming Paradigm](20.md)
 
 - **Procedural Programming**
 - **Object-Oriented Programming**
